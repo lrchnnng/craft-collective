@@ -2,12 +2,57 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col">Testing</div>
+<div class="container header-container">
+    <div class="row text-center mx-auto">
+        <div class="col-6">
+            <div class="landing-content">
+                <h1 class="logo-text">craft collective.</h1>
+                <a href="" type="button" class="btn btn-outline-dark">shop now</a>
+            </div>
+        </div>
+        <div class="col-7 col-md-6 my-auto">
+            <img src="/media/images/landing-page.jpg" class="landing-image" alt="image of woman wearing earring">
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
+<div class="container">
+    <div class="row landing-cards">
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="/media/images/landing-bracelet.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">bracelets.</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="/media/images/landing-earrings.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">earrings.</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="/media/images/landing-necklace.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">necklaces.</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

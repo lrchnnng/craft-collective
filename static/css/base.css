@@ -1,0 +1,24 @@
+.logo-text {
+    font-family: 'Tenor Sans', sans-serif;
+    color: black;
+}
+
+a {
+    color: rgb(105, 105, 105);
+}
+
+a:active {
+    color: black;
+}
+
+.landing-content {
+    padding-top: 50%;
+}
+
+.landing-image {
+    height: calc(50vh - 164px);
+}
+
+.landing-cards {
+    padding-top: 100px !important;
+}
