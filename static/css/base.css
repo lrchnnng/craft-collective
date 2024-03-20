@@ -22,3 +22,7 @@ a:active {
 .landing-cards {
     padding-top: 100px !important;
 }
+
+footer {
+    background-color: red;
+}
