@@ -1,58 +1,145 @@
-<ul>
-    <li class="list-inline-item">
-      <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="text-center">
-              <div><i class="fas fa-search fa-lg"></i></div>
-              <p class="my-0">Search</p>
-          </div>
-      </a>
-      <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-          <form class="form" method="GET" action="">
-              <div class="input-group w-100">
-                  <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-                  <div class="input-group-append">
-                      <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
-                          <span class="icon">
-                              <i class="fas fa-search"></i>
-                          </span>
-                      </button>
-                  </div>
-              </div>
-          </form>
-      </div>
-  </li>
-  <li class="list-inline-item dropdown">
-      <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="text-center">
-              <div><i class="fas fa-user fa-lg"></i></div>
-              <p class="my-0">My Account</p>
-          </div>
-      </a>
-      <div class="dropdown-menu border-0" aria-labelledby="user-options">
-          {% if request.user.is_authenticated %}
-              {% if request.user.is_superuser %}
-                  <a href="" class="dropdown-item">Product Management</a>
-              {% endif %}
-              <a href="" class="dropdown-item">My Profile</a>
-              <a href="" class="dropdown-item">Logout</a>
-          {% else %}
-              <a href="" class="dropdown-item">Register</a>
-              <a href="" class="dropdown-item">Login</a>
-          {% endif %}
-      </div>
-  </li>
-  <li class="list-inline-item">
-      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
-          <div class="text-center">
-              <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-              <p class="my-0">
-                  {% if grand_total %}
-                      £{{ grand_total|floatformat:2 }}
-                  {% else %}
-                      £0.00
-                  {% endif %}
-              </p>
-          </div>
-      </a>
-    </li>
-  </ul>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Basket -->
+        <li class="nav-item">
+            <a class="text-dark {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                <div>
+                    <i class="fas fa-shopping-basket"></i>
+                    {% if grand_total %}
+                    £{{ grand_total|floatformat:2 }}
+                    {% else %}
+                    £0.00
+                    {% endif %}
+                </div>
+            </a>
+        </li>
+
+        <!-- All Products -->
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="">all products.</a>
+        </li>
+
+        <!-- Bracelets -->
+        <li class="nav-item ">
+            <a class="nav-link text-dark" href="">bracelets.</a>
+        </li>
+
+        <!-- Earrings -->
+        <li class="nav-item dropdown p-0">
+            <a class="nav-link text-dark" aria-current="page" role="button" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">earrings.
+            </a>
+            <ul class="dropdown-menu border-0">
+                <li class="dropdown-item border-0">
+                    <a class="text-dark" href="">huggies earrings</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">hoop earrings</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">stud earrings</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">ear cuffs</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">gold earrings</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">silver earrings</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Necklaces -->
+        <li class="nav-item dropdown">
+            <a class="nav-link text-dark" aria-current="page" role="button" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">necklaces.
+            </a>
+            <ul class="dropdown-menu border-0">
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">pendant necklaces</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">chain necklaces</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">gold necklaces</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">silver necklaces</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Rings -->
+        <li class="nav-item dropdown">
+            <a class="nav-link text-dark" aria-current="page" role="button" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">rings.</a>
+            <ul class="dropdown-menu border-0">
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">gold rings</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">silver rings</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">rose gold rings</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Sale -->
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="">view sale.</a>
+        </li>
+
+        <!-- Collections -->
+        <li class="nav-item dropdown">
+            <a class="nav-link text-dark" aria-current="page" role="button" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">collections.</a>
+            <ul class="dropdown-menu border-0">
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">collection 1</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">collection 2</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">collection 3</a>
+                </li>
+                <li class="dropdown-item">
+                    <a class="text-dark" href="">collection 4</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Account -->
+        <li class="nav-item dropdown">
+            <a class="nav-link text-dark" aria-current="page" role="button" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">account.</a>
+            <ul class="dropdown-menu">
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <a href="" class="dropdown-item">Product Management</a>
+                {% endif %}
+                <a href="" class="dropdown-item">My Profile</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
+            </ul>
+        </li>
+        <!-- Search -->
+        <li>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+        </li>
+
+        </ul>
+        </div>
+    </div>
