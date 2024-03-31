@@ -16,14 +16,6 @@ body {
     font-weight: bold !important;
 }
 
-.mobile-top-header{
-    padding-top: 2px;
-}
-
-.list-inline-items {
-    padding: 8px 4px !important;
-}
-
 .landing-content {
     padding-top: 50%;
 }
