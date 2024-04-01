@@ -3,8 +3,11 @@ html {
 }
 
 body {
-    height: calc(100vh - 164px);
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  padding: 20px 0;
 }
 
 .logo-text {
@@ -12,12 +15,18 @@ body {
     color: black;
 }
 
-
-
-.landing-header {
-    padding: 200px;
-}
-
 footer {
     margin: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-container {
+    padding-top: 160px;
+  }
 }
