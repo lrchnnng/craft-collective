@@ -12,9 +12,7 @@ body {
     color: black;
 }
 
-.font-weight-bold {
-    font-weight: bold !important;
-}
+
 
 .landing-header {
     padding: 200px;
@@ -23,21 +21,3 @@ body {
 footer {
     margin: 20px;
 }
-
-  @media (max-width: 991.98px) {
-    .mobile-top-header {
-      display: block; /* Show on smaller screens */
-    }
-    .main-nav {
-      display: none; /* Hide main nav on smaller screens */
-    }
-  }
-
-  @media (min-width: 992px) {
-    .mobile-top-header {
-      display: none; /* Hide on larger screens */
-    }
-    .main-nav {
-      display: block; /* Show main nav on larger screens */
-    }
-  }
