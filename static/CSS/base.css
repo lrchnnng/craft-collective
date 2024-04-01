@@ -16,29 +16,13 @@ body {
     font-weight: bold !important;
 }
 
-.landing-content {
-    padding-top: 50%;
-}
-
-.landing-image {
-    width: 50%;
-}
-
-.landing-cards {
-    padding-top: 100px !important;
+.landing-header {
+    padding: 200px;
 }
 
 footer {
     margin: 20px;
 }
-
-.container {
-    padding-top: 160px;
-}
-
-.mobile-top-header {
-    display: none; /* Hide by default */
-  }
 
   @media (max-width: 991.98px) {
     .mobile-top-header {

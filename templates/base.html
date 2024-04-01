@@ -117,20 +117,22 @@
     </div>
   </header>
 
-
+<main>
   {% if messages %}
   <div class="message-container"></div>
   {% endif %}
 
 
-  <div>
+  <div class="page-header">
     {% block page_header %}
     {% endblock %}
   </div>
 
-
+<div class="">
   {% block content %}
   {% endblock %}
+</div>
+</main>
 
   {% block postloadjs %}
   {% endblock %}
