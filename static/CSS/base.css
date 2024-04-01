@@ -23,6 +23,10 @@ footer {
   .header-container {
     padding-top: 80px;
   }
+
+  .landing-page {
+    padding-top: 100px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -37,7 +41,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .landing-page {
-    padding-top: 200px;
+    padding-top: 220px;
   }
 
   .header-container {
