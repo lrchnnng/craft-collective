@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
 }
 
 h1 {
@@ -11,22 +11,36 @@ h1 {
 }
 
 .logo-text {
-    font-family: 'Tenor Sans', sans-serif;
-    color: black;
+    font-family: 'Lato', sans-serif;
+    color: black !important;
 }
 
 footer {
     margin: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
   .header-container {
-    padding-top: 40px;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .landing-page {
+    padding-top: 100px;
+  }
+
+  .header-container {
+    padding-top: 100px
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .landing-page {
+    padding-top: 200px;
+  }
+
   .header-container {
-    padding-top: 160px;
+    padding-top: 200px;
   }
 }

@@ -56,7 +56,7 @@
         <form class="form" method="GET" action="">
           <div class="input-group w-100">
             <input class="form-control border border-black rounded-0" type="text" name="q"
-              placeholder="Search our site">
+              placeholder="search...">
             <div class="input-group-append">
               <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
                 <i class="fas fa-search fa-lg"></i>
@@ -70,10 +70,11 @@
         <ul class="list-inline list-unstyled text-center text-lg-right my-auto">
           <li class="list-inline-item">
             <div class="dropdown-center">
-              <button class="btn text-dark" type="button" id="user-options" data-bs-toggle="dropdown"
+              <button class="nav-link btn text-dark nav-link" type="button" id="user-options" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <div class="text-center">
-                  <p class="my-auto">account.</p>
+                <div class="text-dark">
+                  <p class="">
+                    my account.</p>
                 </div>
               </button>
               <ul class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -91,9 +92,9 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" href="">
+            <a class=" nav-link{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" href="">
               <div class="text-center">
-                <p class="text-dark my-auto">
+                <p class="text-dark ">
                   <i class="fas fa-shopping-basket"></i>
                   {% if grand_total %}
                   £{{ grand_total|floatformat:2 }}
