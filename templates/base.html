@@ -108,12 +108,12 @@
     </div>
     <div class="row bg-white">
       <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
-        <button class="navbar-toggler my-0" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        <button class="navbar-toggler my-0" type="button" data-toggle="collapse" data-target="#main-nav"
           aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
-        {% include 'includes/mobile-top-header.html' %}
-        {% include 'includes/main-nav.html' %}
+        {% include 'includes/navbars/mobile-top-header.html' %}
+        {% include 'includes/navbars/main-nav.html' %}
       </nav>
     </div>
   </header>
@@ -129,9 +129,9 @@
         {% elif level == 25 %}
           {% include 'includes/toasts/toast_success.html' %}
         {% else %}
-      {% include 'includes/toasts/toast_info.html' %}
-    {% endif %}
-    {% endwith %}
+          {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+      {% endwith %}
     {% endfor %}
   </div>
   {% endif %}
@@ -153,14 +153,14 @@
   </script>
   {% endblock %}
 
-  <!--- <footer class="fixed-bottom">
+  <footer class="fixed-bottom">
     <div class="d-block d-md-none container-fluid col-12">
-      {% include 'includes/mobile-bottom-footer.html' %}
+      {% include 'includes/footers/mobile-bottom-footer.html' %}
     </div>
     <div class="d-none d-md-block mx-auto text-start">
-      {% include 'includes/main-footer.html' %}
+      {% include 'includes/footers/main-footer.html' %}
     </div>
-  </footer> -->
+  </footer>
 </body>
 
 </html>
