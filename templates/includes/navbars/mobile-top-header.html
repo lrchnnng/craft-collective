@@ -6,7 +6,7 @@
     </li>
     <li class="list-inline-item">
         <div class="dropdown-center d-lg-none">
-            <button class="text-dark border-0 bg-white" type="button" id="mobile-search" data-bs-toggle="dropdown"
+            <button class="text-dark border-0 bg-white" type="button" id="mobile-search" data-toggle="dropdown"
                 aria-expanded="false">
                 <div class="text-center">
                     <i class="fas fa-search fa-lg"></i> 
@@ -29,7 +29,7 @@
 
     <li class="list-inline-item">
         <div class="dropdown-center d-lg-none">
-            <button class="btn text-dark" type="button" id="user-options" data-bs-toggle="dropdown"
+            <button class="btn text-dark text-align-right" type="button" id="user-options" data-toggle="dropdown"
                 aria-expanded="false">
                 <div class="text-center">
                     <i class="fas fa-user fa-lg"></i>
@@ -40,7 +40,7 @@
                 {% if request.user.is_superuser %}
                 <li><a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a></li>
                 {% endif %}
-                <li><a href="#" class="dropdown-item">My Profile</a></li>
+                <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
                 <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
                 {% else %}
                 <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
