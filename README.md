@@ -85,6 +85,25 @@
 ### 2.2 Scope
 #### Features
 
+|Index Page|A simple landing page navigating users to various other pages of the site|
+|:---:|---|
+|`Nav Bar`|A responsive navigation bar that allows the user to easily navigate around the site|
+|`H1`|Used for the logo/title|
+|`Large Button`|A button navigating the user to view all products|
+|`H4`|Used to inform user of the free delivery minimum|
+
+|All Products Page|A view for the users to view all products|
+|:---:|---|
+|`Nav Bar`|A responsive navigation bar that allows the user to easily navigate around the site|
+|`H2`|Used for the page title|
+|`P`|Used to display the total number of products on the page|
+|`Select`|A dropdown box with a variety of sort options|
+|`img`|Used to display an image of the product and links to the specific product's description page|
+|`P`|Used to display the name of the product as well as the product price|
+
+|Product Detail Page||
+
+
 ### 2.3 Structure
 #### Userflow
 
