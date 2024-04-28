@@ -22,6 +22,25 @@
 ### Page Testing
 |Nav Bar Testing|Yes/No|
 |---|:---:|
+|Nav bar test and styles are loaded||
+|Mobile header appears up to medium sized screens||
+|All nav links work as intended||
+|Nav logo directs user to index page||
+|If user logged in as admin, nav bar shows `Product Management`, `My Profile` and `Logout` links||
+|If user is logged in but not admin, nav bar shows `My Profile` and `Logout` links||
+|If user is not logged in, nav bar shows `Register` and `Login`||
+|`home.` links to the index page||
+|`who we are.` triggers a dropdown menu for `about us.` and `FAQ.`||
+|`about us.` links to about us page||
+|`FAQ.` links to FAQ page||
+|`all products.` links to all products page||
+|`bracelets.` links to bracelets category page||
+|`earrings.` links to earrings category page||
+|`necklaces.` links to necklaces category page||
+|`rings` links to rings category page||
+|In mobile view `search icon` triggers a drop down input field||
+|`search bar` allows text input and searches products||
+|`bag` total price updates when item is added to the bag and when clicked directs user to the bag page||
 
 |Footer Testing|Yes/No|
 |---|:---:|
