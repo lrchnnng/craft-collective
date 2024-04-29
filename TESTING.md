@@ -182,7 +182,7 @@
 |products.html||
 |product_detail.html||
 |index.html|✓|
-|about_us.html||
+|about_us.html|✓|
 |faq.html||
 |checkout.html||
 |checkout_success.html||

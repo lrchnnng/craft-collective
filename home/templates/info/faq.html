@@ -2,11 +2,94 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container align-content-center">
-        <div class="row">
-            <div class="col text-center">
-                <h2 class="logo-font">Frequently Asked Questions</h2>
+<div class="container header-container align-content-center">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="logo-font">Frequently Asked Questions</h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="accordion col-sm-10 col-md-8 mx-auto px-4 my-4" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h3 class="mb-0">
+                <button class="btn btn-link text-dark text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Q: What is craft collective.?
+                </button>
+            </h3>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                A: craft collective. is an online jewellery story founded in 2010 by three friends focused on producing
+                high quality and handcrafted jewellery that’s both beautiful and affordable. </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link text-dark text-left" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Q: What makes craft collective. different?
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                A: Craft Collective isn't your average jewellery store. We're a passionate bunch of artisans who believe
+                everyone deserves beautiful, handcrafted pieces. We ditch the mass-produced trends and sky-high prices,
+                offering unique designs made with love and skill by our talented community.
+                <br>
+                Here, you'll find jewellery as special as you are. Whether you crave delicate elegance or bold
+                statements, we have something to make you shine. Plus, with our commitment to affordability, you can
+                treasure handcrafted luxury without emptying your wallet. Welcome to Craft Collective, where
+                individuality and artistry meet!
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link text-dark text-left" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Q: What is craft collective.?
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    A: craft collective. is an online jewellery story founded in 2010 by three friends focused on
+                    producing high quality and handcrafted jewellery that’s both beautiful and affordable. </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button class="btn btn-link text-dark text-left" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        Q: What is craft collective.?
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    A: craft collective. is an online jewellery story founded in 2010 by three friends focused on
+                    producing high quality and handcrafted jewellery that’s both beautiful and affordable. </div>
             </div>
         </div>
     </div>
-{% endblock %}
+
+    <script type="text/javascript">
+        $('.collapse').collapse()
+    </script>
+    {% endblock %}
