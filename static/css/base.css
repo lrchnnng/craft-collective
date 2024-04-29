@@ -235,6 +235,14 @@ color: #fff;
 color: #17a2b8; /* text-info */
 }
 
+/* page padding for desktop and up */
+@media (min-width: 1024px) {
+  .header-container {
+    padding-top: 600px;
+  }
+
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
   .fixed-top-desktop-only {
@@ -251,6 +259,11 @@ color: #17a2b8; /* text-info */
 
   .product-header {
     padding-top: 40px;
+  }
+
+  .landing-text {
+    display: block;
+    align-content: center;
   }
 }
 

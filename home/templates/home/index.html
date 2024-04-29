@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container">
+    <div class="container header-container">
         <div class="row">
             <div class="col-12">
             </div>
@@ -13,18 +13,15 @@
 {% block content %}
 <div class="container-fluid landing-page">
     <div class="row">
-        <div class="col-12 col-md-6 text-center">
+        <div class="col-12 col-md-6 text-center landing-text my-auto">
             <h1 class="logo-font my-4 text-black">craft collective.</h1>
             <a href="{% url 'products' %}" type="button" class="btn btn-dark btn-lg text-light">shop now</a>
             <p class="my-4">Free delivery on orders over £{{ free_delivery_threshold }}</p>
         </div>
-        <div class="col-12 col-md-6">        
+        <div class="col-12 col-md-6 landing-img">        
             <img src="media/images/24-BG02.webp" width="100%" alt="">
         </div>
     </div>
-</div>
-
-<div class="container text-center p-4">
 </div>
 
 <!--
