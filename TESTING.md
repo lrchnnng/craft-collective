@@ -181,7 +181,7 @@
 |edit_product.html||
 |products.html||
 |product_detail.html||
-|index.html||
+|index.html|✓|
 |about_us.html||
 |faq.html||
 |checkout.html||
