@@ -2,11 +2,9 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container align-content-center">
+    <div class="container">
         <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="logo-font my-4">craft collective.</h1>
-                <h3 class="text-muted">affordable handmade jewellery</h3>
+            <div class="col-12">
             </div>
         </div>
     </div>
@@ -15,14 +13,18 @@
 {% block content %}
 <div class="container-fluid landing-page">
     <div class="row">
-        <div class="col-12 text-center mx-auto">
+        <div class="col-12 col-md-6 text-center">
+            <h1 class="logo-font my-4 text-black">craft collective.</h1>
             <a href="{% url 'products' %}" type="button" class="btn btn-dark btn-lg text-light">shop now</a>
+            <p class="my-4">Free delivery on orders over £{{ free_delivery_threshold }}</p>
+        </div>
+        <div class="col-12 col-md-6">        
+            <img src="media/images/24-BG02.webp" width="100%" alt="">
         </div>
     </div>
 </div>
 
 <div class="container text-center p-4">
-    <h4>Free delivery on orders over £{{ free_delivery_threshold }}</h4>
 </div>
 
 <!--

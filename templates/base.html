@@ -147,12 +147,6 @@
     {% endblock %}
   </div>
 
-  {% block postloadjs %}
-  <script type="text/javascript">
-    $('.toast').toast('show');
-  </script>
-  {% endblock %}
-
   <footer class="fixed-bottom">
     <div class="d-block d-md-none container-fluid col-12">
       {% include 'includes/footers/mobile-bottom-footer.html' %}
@@ -161,6 +155,12 @@
       {% include 'includes/footers/main-footer.html' %}
     </div>
   </footer>
+
+  {% block postloadjs %}
+  <script type="text/javascript">
+    $('.toast').toast('show');
+  </script>
+  {% endblock %}
 </body>
 
 </html>
