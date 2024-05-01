@@ -9,6 +9,11 @@ from django_countries.fields import CountryField
 from products.models import Product
 from profiles.models import UserProfile
 
+# METAL_CHOICES = (
+#    ('gold', 'Gold'),
+#    ('silver', 'Silver'),
+#    ('rosegold', 'Rose Gold'),
+#)
 
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
@@ -65,7 +70,8 @@ class Order(models.Model):
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
-    product_size = models.CharField(max_length=2, null=True, blank=True) # XS, S, M, L, XL
+    product_size = models.CharField(max_length=1, null=True, blank=True)
+    # metal_type = models.CharField(max_length=10, choices=METAL_CHOICES, default='silver', null=True, blank=True)    
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
