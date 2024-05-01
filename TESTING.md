@@ -161,11 +161,12 @@
 |email.html||
 |login.html|✓|
 |logout.html|✓|
-|password_reset_done.html||
-|password_reset_from_key_done.html||
-|password_reset_from_key.html||
+|password_change.html|✓|
+|password_reset_done.html|✓|
+|password_reset_from_key_done.html|✓|
+|password_reset_from_key.html|✓|
 |password_reset.html||
-|password_set.html||
+|password_set.html|✓|
 |signup_closed.html||
 |signup.html|✓|
 |verification_sent.html||
