@@ -157,8 +157,8 @@
 |templates/allauth/base.html||
 |account_innactive.html||
 |templates/allauth/account/base.html|✓|
-|email_confirm.html||
-|email.html||
+|email_confirm.html|✓|
+|email.html|✓|
 |login.html|✓|
 |logout.html|✓|
 |password_change.html|✓|
@@ -167,10 +167,10 @@
 |password_reset_from_key.html|✓|
 |password_reset.html||
 |password_set.html|✓|
-|signup_closed.html||
+|signup_closed.html|✓|
 |signup.html|✓|
-|verification_sent.html||
-|verified_email_required.html||
+|verification_sent.html|✓|
+|verified_email_required.html|✓|
 |main-nav.html||
 |mobile-top-header.html||
 |toast_error.html||
