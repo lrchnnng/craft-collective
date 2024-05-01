@@ -6,10 +6,12 @@
 {% endblock %}
 
 {% block page_header %}
-<div class="container header-container align-content-center">
+<div class="container header-container">
     <div class="row">
         <div class="col text-center">
-            <h2 class="logo-font mb-4">my profile.</h2>
+            <hr>
+            <h2 class="logo-font mb-4 text-center">my profile</h2>
+            <hr>
         </div>
     </div>
 </div>
@@ -26,7 +28,7 @@
                     <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
                 </form>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 mt-4 pt-4">
                 <p class="text-muted">Order History</p>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless">
@@ -72,6 +74,14 @@
                 </div>
             </div>
         </div>
+        <div class="container text-center py-4 my-4">
+        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
+        </a>
+    </div>
 {% endblock %}
 
 {% block postloadjs %}

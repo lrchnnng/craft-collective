@@ -177,9 +177,9 @@
 |Ttoast_info.html|✓|
 |toast_success.html|✓|
 |toast_warning.html|✓|
-|profile.html||
-|add_product.html||
-|edit_product.html||
+|profile.html|✓|
+|add_product.html|✓|
+|edit_product.html|✓|
 |products.html|✓|
 |product_detail.html|✓|
 |index.html|✓|
