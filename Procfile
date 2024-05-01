@@ -1,0 +1,1 @@
+web: gunicorn craft-collective.wsgi:application
