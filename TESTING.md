@@ -155,7 +155,7 @@
 |---|:---:|
 |templates/base.html||
 |templates/allauth/base.html||
-|account_innactive.html||
+|account_innactive.html|✓|
 |templates/allauth/account/base.html|✓|
 |email_confirm.html|✓|
 |email.html|✓|
@@ -173,10 +173,10 @@
 |verified_email_required.html|✓|
 |main-nav.html||
 |mobile-top-header.html||
-|toast_error.html||
-|Ttoast_info.html||
-|toast_success.html||
-|toast_warning.html||
+|toast_error.html|✓|
+|Ttoast_info.html|✓|
+|toast_success.html|✓|
+|toast_warning.html|✓|
 |profile.html||
 |add_product.html||
 |edit_product.html||
