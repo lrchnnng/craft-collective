@@ -1,1 +1,1 @@
-web: gunicorn craft-collective.wsgi:application
+web: gunicorn craftcollective.wsgi:application
