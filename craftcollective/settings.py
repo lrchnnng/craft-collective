@@ -1,4 +1,5 @@
 import os
+import env
 import dj_database_url
 from pathlib import Path
 
@@ -10,12 +11,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-f29jg$m^o0a==d#hx4f3dt$1lbx0jh8lp@arz=piuaxx%qsdn('
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['craft-collective.heroku.com', 'localhost']
+ALLOWED_HOSTS = ['craft-collective-362cbb5677f5.herokuapp.com', 'localhost']
 
 
 # Application definition
