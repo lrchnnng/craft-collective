@@ -36,9 +36,10 @@
 * About Us Page
 * Contact Us Page
 * Frequently Asked Questions Page
-* User -  Account Page
+* User -  Profile Page
 * Admin - Account Page
-* Admin - Add Product Form
+* Admin - Add Product Page
+* Admin - Edit Product Page
 
 ## 2. UX/UI Design
 ### 2.1 Strategy

@@ -1,4 +1,5 @@
 import os
+import env
 import dj_database_url
 from pathlib import Path
 
@@ -14,7 +15,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['craft-collective-04be76258b34.herokuapp.com']
+ALLOWED_HOSTS = ['craft-collective-04be76258b34.herokuapp.com', '8000-lrchnnng-craftcollectiv-ndbyce7prw1.ws-eu110.gitpod.io']
 
 # Application definition
 
