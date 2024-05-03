@@ -1,4 +1,5 @@
 <ul class="my-auto my-0">
+    <!-- Search Bar -->
     <li class="list-inline-item">
         <div class="dropdown-center d-lg-none">
             <button class="text-dark border-0 bg-white" type="button" id="mobile-search" data-toggle="dropdown"
@@ -22,6 +23,7 @@
         </div>
     </li>
 
+    <!-- Account -->
     <li class="list-inline-item">
         <div class="dropdown d-lg-none">
             <button class="btn text-dark text-align-right" type="button" id="user-options" data-toggle="dropdown"
@@ -45,6 +47,7 @@
         </div>
     </li>
 
+    <!-- Shopping Bag -->
     <li class="list-inline-item">
         <a class=" d-lg-none {% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %}" href="{% url 'view_bag' %}">
             <p class="my-0 text-dark">
