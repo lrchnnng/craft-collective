@@ -63,7 +63,7 @@
 8. I want to be able to easily see what I've searched for and the number of results.
 9. I want to be able to easily select the size, metal type and quantity of a product when purchasing it.
 10. I want to be able to view items in my bag before purchasing.
-11. I want to be abe to adjust the quantity of the individual items in my bag.
+11. I want to be able to adjust the quantity of the individual items in my bag.
 12. I want to be able to easily enter payment information.
 13. I want to be able to feel my personal information is safe and secure.
 14. I want to be able to view an order confirmation after checkout.
@@ -176,6 +176,7 @@ I opted to use a relational database as it allows for easier and more structured
 ## 8. Testing
 
 ## 9. Deployment
+
 
 ## 10. Credits and Acknowledgments
 * [Affinity](https://affinity.serif.com/en-gb/designer/) - Used to resize images.

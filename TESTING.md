@@ -184,7 +184,7 @@
 |product_detail.html|✓|
 |index.html|✓|
 |about_us.html|✓|
-|faq.html||
+|faq.html|✓|
 |checkout.html||
 |checkout_success.html||
 |bag.html||
