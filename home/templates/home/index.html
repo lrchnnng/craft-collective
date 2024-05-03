@@ -2,12 +2,13 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col-12">
-            </div>
+<!-- Page Header -->
+<div class="container header-container">
+    <div class="row">
+        <div class="col-12">
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -18,7 +19,7 @@
             <a href="{% url 'products' %}" type="button" class="btn btn-dark btn-lg text-light">shop now</a>
             <p class="my-4">Free delivery on orders over £{{ free_delivery_threshold }}</p>
         </div>
-        <div class="col-12 col-md-6 landing-img">        
+        <div class="col-12 col-md-6 landing-img">
             <img src="media/images/24-BG02.webp" width="100%" alt="">
         </div>
     </div>

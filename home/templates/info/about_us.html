@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+<!-- Page Title -->
 <div class="container header-container">
     <div class="row">
         <div class="col-12 text-center">
@@ -14,6 +15,7 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
+        <!-- About Us -->
         <div class="col-12 px-4">
             <p class="p-4 mx-4">In 2010, three friends, Maya, a silversmith with a penchant for vintage designs, Daniel, a
                 stone carver with a passion for hidden gems, and Sarah, a textile artist with a flair for the
@@ -32,7 +34,16 @@
                 special, unique, and affordable as it was on that first market day.
             </p>
         </div>
-
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+        </div>
     </div>
 </div>
 {% endblock %}
