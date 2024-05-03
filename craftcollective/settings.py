@@ -15,7 +15,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['craft-collective-04be76258b34.herokuapp.com', '8000-lrchnnng-craftcollectiv-ndbyce7prw1.ws-eu112.gitpod.io']
+ALLOWED_HOSTS = ['craft-collective-04be76258b34.herokuapp.com', '8000-lrchnnng-craftcollectiv-ndbyce7prw1.ws-eu110.gitpod.io']
 
 # Application definition
 
@@ -168,6 +168,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'craft-collective'
     AWS_S3_REGION_NAME = 'eu-west-2'

@@ -33,11 +33,11 @@
 * Sign Up
 * All Products Page
 * Individual Product Page
+* Shopping Bag
+* Checkout Page
 * About Us Page
-* Contact Us Page
 * Frequently Asked Questions Page
 * User -  Profile Page
-* Admin - Account Page
 * Admin - Add Product Page
 * Admin - Edit Product Page
 
@@ -111,14 +111,31 @@
 ### 2.4 Skeleton
 #### Wireframes
 
+**Mobile**
+
+![Mobile Wireframes of main pages](assets/readme-img/mobile-wireframes.jpg)
+
 ### 2.5 Surface
 | Type | Image | Description|
 |:---:|---|---|
 |Typography|||
-|Colours|||
+|Colours|![screenshot of colour palette](assets/readme-img/colours.jpg)|I chose to use a simple white, black and grey colour scheme in order to keep accessibility scores high. Given the majority of the site is fairly image heavy I also didn't want the background/text to over power the products. By keeping the colour palette clean, the products are kept the main focus of the site.|
 |Images|||
 
 ## 3. Database Design
+I opted to use a relational database as it allows for easier and more structured connections between related data. In order to visualise this my site data I used [Lucid Chart](https://www.lucidchart.com/) to design my database tables and how they would relate to one another.
+
+![Database Schema](assets/readme-img/database-design.jpg)
+
+**Category**
+
+**Product**
+
+**User Profile**
+
+**Order**
+
+**Order Line Item**
 
 ## 4. Error Handling
 
@@ -135,14 +152,14 @@
 [Python](https://www.python.org/) - used to create the backend of the site, including models, forms, url pathways
 
 ### Frameworks & Libraries
-[Django]() - used to quickly create apps and adding authentication
+[Django](https://www.djangoproject.com/) - used to quickly create apps and adding authentication
 
 [jQuery](https://jquery.com/) - used to write short and concise javascript
 
 [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - used to create templates that can be extended upon. Also allows for insertion of backend data and url links.
 
 ### Design
-[Affinity](link) - a design tool used to resize and export images and change file types
+[Affinity](https://affinity.serif.com/en-gb/designer/) - a design tool used to resize and export images and change file types
 
 [Figma](https://www.figma.com/) - a design and prototyping tool used for UI/UX Design. I used figma to create responsive wireframes for each page of the web app.
 
@@ -161,3 +178,16 @@
 ## 9. Deployment
 
 ## 10. Credits and Acknowledgments
+* [Affinity](https://affinity.serif.com/en-gb/designer/) - Used to resize images.
+* [Django](https://www.djangoproject.com/) - Used to create site.
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) - Used to style site.
+* [Figma](https://www.figma.com/) - Used to create wireframes.
+* [Google Fonts](https://fonts.google.com/) - Used for fonts across the site.
+* [Heroku](https://www.heroku.com/home) - Used to deploy the site.
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used to create site structure.
+* [JavaScript](https://www.javascript.com/) - Used to add interactivity and animation.
+* [jQuery](https://jquery.com/) - Used to write JS.
+* [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - Used for templating.
+* [Lucid Chart](https://www.lucidchart.com/) - Used to create visual database schema.
+* [Markdown](https://www.markdownguide.org/) - Used to format README and TESTING.
+* [Python](https://www.python.org/) - Used for coding functions and classes.
