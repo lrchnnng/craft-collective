@@ -112,8 +112,9 @@
 #### Wireframes
 
 **Mobile**
-
 ![Mobile Wireframes of main pages](assets/readme-img/mobile-wireframes.jpg)
+
+**Desktop**
 
 ### 2.5 Surface
 | Type | Image | Description|
@@ -141,32 +142,76 @@ I opted to use a relational database as it allows for easier and more structured
 
 ## 5. Technologies Used
 ### Languages
-[CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) (Cascading Style Sheets) - used to add design to the HTML structure
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript](https://www.javascript.com/)
+- [Markdown](https://www.markdownguide.org/)
+- [Python](https://www.python.org/)
 
-[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) (HyperText Markup Language) - used to create the structure of the web pages
+### Frameworks
+- [Bootstrap](https://getbootstrap.com/) - A framework that uses classes and JS to help build responsive, mobile first sites
 
-[JavaScript](https://www.javascript.com/) - used to add interactivity and animations
+- [Django](https://www.djangoproject.com/) - A Python web framework that aids in quick development of apps as well as clean design.
 
-[Markdown](https://www.markdownguide.org/) - used to format README and TESTING files
+### Libraries & Packages
+- [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
 
-[Python](https://www.python.org/) - used to create the backend of the site, including models, forms, url pathways
+- [botocore](https://pypi.org/project/botocore/) - The foundation for the AWS CLI and boto3
 
-### Frameworks & Libraries
-[Django](https://www.djangoproject.com/) - used to quickly create apps and adding authentication
+- [dj-database-url](https://pypi.org/project/dj-database-url/) - Allows the utilisation of the DATABASE_URL variable
 
-[jQuery](https://jquery.com/) - used to write short and concise javascript
+- [Django Allauth](https://docs.allauth.org/en/latest/) - Used for authentication, registration and account management
 
-[Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - used to create templates that can be extended upon. Also allows for insertion of backend data and url links.
+- [django-countries](https://pypi.org/project/django-countries/) - Provides country choices for use with forms and country field for models
+
+- [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) - Builds programmatic reusable layouts for Django forms
+
+- [django-storages](https://pypi.org/project/django-storages/) - A storage backend library
+
+- [Font Awesome](https://fontawesome.com/) - A library of icons
+
+- [gunicorn](https://pypi.org/project/gunicorn/) - A Python WSGI HTTP Server
+
+- [pillow](https://pypi.org/project/pillow/) - A Python imaging library
+
+- [psycopg2](https://pypi.org/project/psycopg2/) - A postgres database adapter allowing connection with a postgres database
+
+- [jQuery](https://jquery.com/) - V 3.4.1 - A JavaScript framework
+
+- [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - A templating engine similar to Python syntax
+
+### Database
+- [Code Institute DB Maker](https://dbs.ci-dbs.net/) - Used to create database for deployment
+
+- sqlite3 - Used as a database during development
 
 ### Design
-[Affinity](https://affinity.serif.com/en-gb/designer/) - a design tool used to resize and export images and change file types
+- [Affinity](https://affinity.serif.com/en-gb/designer/) - A design tool used to resize and export images and change file types
 
-[Figma](https://www.figma.com/) - a design and prototyping tool used for UI/UX Design. I used figma to create responsive wireframes for each page of the web app.
+- [Figma](https://www.figma.com/) - A design and prototyping tool used for UI/UX Design
 
-[Google Fonts](https://fonts.google.com/) - a free, open-source collection of web fonts provided by Google. Using CSS I integrated and applied two of my selected fonts into the web app.
+- [Google Fonts](https://fonts.google.com/) - a free, open-source collection of web fonts provided by Google 
 
 ### Other
-[Heroku](https://www.heroku.com/home) - a cloud platform as a service (PaaS) that simplifies the deployment, management and scaling of web applications. Using Heroku I was able to connect both front and back end of my app and deploy the site successfully.
+
+- [Git](https://git-scm.com/) - Version control
+
+- [GitHub](https://github.com/) - Saves and stores files for the project
+
+- [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - Helps diagnose problems quickly and test features
+
+- [pip](https://pypi.org/project/pip/) - Used for installing packages in the terminal
+
+### Stripe
+[Stripe](https://stripe.com/gb) is used to implement the payment system.
+
+Stripe is in developer mode which allows for us to process test payments to check how the site functions in different situations
+
+|Type|Card No.|Date|CVC|
+|---|---|---|---|
+|Success|4242 4242 4242 4242|4242|Any future date|
+|Require Authorisation|4000 0025 0000 3155|Any future date|Any 3 digits|
+|Declined|4000 0000 0000 0002|Any future date|Any 3 digits|
 
 
 ## 6. Defensive Programming
@@ -181,6 +226,7 @@ I opted to use a relational database as it allows for easier and more structured
 ## 10. Credits and Acknowledgments
 * [Affinity](https://affinity.serif.com/en-gb/designer/) - Used to resize images.
 * [Django](https://www.djangoproject.com/) - Used to create site.
+* [Code Institute DB Maker](https://dbs.ci-dbs.net/) - Used to create my database for deployment.
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) - Used to style site.
 * [Figma](https://www.figma.com/) - Used to create wireframes.
 * [Google Fonts](https://fonts.google.com/) - Used for fonts across the site.
