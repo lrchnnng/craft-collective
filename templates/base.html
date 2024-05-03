@@ -45,8 +45,10 @@
 
 <body>
   <header class="container-fluid fixed-top bg-white">
+    <!-- Navbar -->
     <div id="topnav" class="row bg-white p-lg-4 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <!-- Logo Text -->
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
           <h2 class="logo-font text-dark my-0">craft collective.</h2>
         </a>
@@ -56,6 +58,7 @@
           <div class="input-group w-100">
             <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="search...">
             <div class="input-group-append">
+              <!-- Search Bar -->
               <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
                 <i class="fas fa-search fa-lg"></i>
               </button>
@@ -118,6 +121,7 @@
     </div>
   </header>
 
+  <!-- Toast Triggers -->
   {% if messages %}
   <div class="message-container">
     {% for message in messages %}
@@ -136,17 +140,19 @@
   </div>
   {% endif %}
 
-
+  <!-- Page Header -->
   <div class="page-header">
     {% block page_header %}
     {% endblock %}
   </div>
 
+  <!-- Page Content -->
   <div class="">
     {% block content %}
     {% endblock %}
   </div>
 
+  <!-- Footer -->
   <footer class="fixed-bottom">
     <div class="d-block d-md-none container-fluid col-12">
       {% include 'includes/footers/mobile-bottom-footer.html' %}
