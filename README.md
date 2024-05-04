@@ -101,7 +101,6 @@
 |`Edit` and `Delete`|If the user is logged in as an admin these buttons allow them to edit or delete the product from the site|
 |`Back to top`|A button that appears at the bottom right of the screen when scrolling, when clicked, takes user back to the top of the page|
 
-
 |Product Details|A view for the users to view extra details on a specific product|
 |:---:|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
@@ -110,17 +109,26 @@
 |`Edit` and `Delete`|If the user is logged in as an admin these buttons allow them to edit or delete the product from the site|
 |`Size Selection`|If the product has a size associated with it then a dropdown box will show allowing the user to select a size|
 |`Quantity Selector`|Comprises of a button to decrease the quantity by 1, an input field that displays the current quantity and a button to increase the quantity by 1|
-
+|`Back Button`|A button that direct user back to the products page|
+|`Add to Bag Button`|A button that adds the item to the users shopping bag|
 
 |Login|A page for users to log in to their previously registered account|
 |:---:|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
+|`Message`|A message with a link to the sign up page if they have not already registered for an account|
+|`Login Form`|A form requiring user's login information|
+|`Return Home Button`|Directs the user back to the index page|
+|`Sign In Button`|A button that submits sign in form and logs the user into their account|
+|`Forgot Password?`|If the user has forgotten their password this will redirect them to a page to reset their password via an email|
 
 |Sign Up|A page for users to sign up for an account|
 |:---:|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
+|`Sign Up Form`|A form prompting users to input their details in order to create an account|
+|`Sign Up Button`|A button that submits the sign up form and creates and account for the user|
+|`Sign In Link`|A message with a link that redirects users to sign in page if they already have a registered account|
 
 |Shopping Bag|A view for the users to view products in their shopping bag, allowing them to edit quantities or remove items and continue on to checkout page|
 |---|---|
@@ -162,6 +170,8 @@
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 
+#### Error Handling
+
 
 ### 2.3 Structure
 #### Database Design
@@ -193,8 +203,6 @@ I opted to use a relational database as it allows for easier and more structured
 **Order**
 
 **Order Line Item**
-
-## 3. Error Handling
 
 ## 4. Technologies Used
 ### Languages
