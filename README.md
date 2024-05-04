@@ -86,12 +86,12 @@
 #### Features
 
 |Index/Home|A simple landing page navigating users to begin shopping|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Hero Section`|Including a page title with the brand name, a large button directing users to the products page and an image showcasing the type of product the site sells|
 
 |All Products|A view for the users to view all products|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 |`Category Name`|If user has selected a specific category, the name of the category is displayed at the top of the page|
@@ -102,7 +102,7 @@
 |`Back to top`|A button that appears at the bottom right of the screen when scrolling, when clicked, takes user back to the top of the page|
 
 |Product Details|A view for the users to view extra details on a specific product|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Product Image`|Displays an image of the product|
 |`Product Details`|Displays information about the product, name, price, description|
@@ -113,7 +113,7 @@
 |`Add to Bag Button`|A button that adds the item to the users shopping bag|
 
 |Login|A page for users to log in to their previously registered account|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 |`Message`|A message with a link to the sign up page if they have not already registered for an account|
@@ -123,7 +123,7 @@
 |`Forgot Password?`|If the user has forgotten their password this will redirect them to a page to reset their password via an email|
 
 |Sign Up|A page for users to sign up for an account|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 |`Sign Up Form`|A form prompting users to input their details in order to create an account|
@@ -142,31 +142,50 @@
 |`Empty Bag Page`|If the user doesn't have any items in their bag then they will see a message informing them of their empty bag and a button to direct the user back to the products page in order to keep shopping|
 
 |Checkout|A page allowing the user to input delivery and billing information in order to complete their purchase|
+|---|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
+|`Order Summary`|Gives the user a summary of their order, displaying product images, names, sizes, quantities and prices|
+|`Order Price information`|Displays the order total, the delivery total and the grand total (order + delivery) to the user|
+|`Payment Form`|A form that prompts users to input their delivery and contact information|
+|`Create an account` or `login`|Two links within a message prompting users to either sign in or create an account|
+|`Stripe`|An field for users to input their card details in order to make a payment, there is also a message field that displays any errors|
+|`Adjust Bag`|A button that redirects user back to the shopping bag button|
+|`Complete Order`|A button that submits the order form and completes the purchase|
+|`Loading Overlay`|When the payment is being processed a loading overlay covers the screen with a loading animation icon|
+
+|Checkout Success|A page confirming the success of the payment/order and displaying the order details|
 |:---:|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
+|`Order Information`|Displays the order number and date|
+|`Order Details`|Displays item size and quantity|
+|`Delivery Information`|Displays user's name, address, postcode and phone number|
+|`Billing Information`|Displays order total, delivery cost and grand total|
+|`Back to Profile`|A button that redirects users back to their profile page|
+|`Keep Shopping`|A button that redirects users back to the products page|
 
 |About Us|A page giving the user information about the brand/site owners|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 |`Image`|An image of the site owners|
 |`About us`|A couple of paragraphs explaining the history of the brand and who they are|
 
 |Frequently Asked Questions|A page showing frequently asked questions about the site/brand|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 |`Accordian`|A series of accordian dropdowns, displaying a question and allowing users to view the answer when clicked|
 |`Keep Shopping`|A button directing the user to the product page|
 
 |User - Profile Page|A personalised page allowing users to update their delivery information and view previous orders|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 
 |Admin - Add/Edit Product Page|A page allowing the site owner to add/edit products on the site|
-|:---:|---|
+|---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 
