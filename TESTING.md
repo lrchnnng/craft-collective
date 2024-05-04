@@ -187,7 +187,7 @@
 |faq.html|✓|
 |checkout.html||
 |checkout_success.html||
-|bag.html||
+|bag.html|✓|
 
 ### CSS Validation
 |Source|Y/N|

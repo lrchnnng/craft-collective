@@ -1,7 +1,7 @@
 # craft collective. <!-- omit in toc -->
 **A fictional e-commerce jewellery store using Django and Stripe** 
 
-[Link to Testing](link)
+[Link to Testing](https://github.com/lrchnnng/craft-collective/blob/main/TESTING.md)
 
 ![Image of site on devices](link)
 
@@ -22,7 +22,6 @@
 - [7. Future Goals](#7-future-goals)
 - [8. Testing](#8-testing)
 - [9. Deployment](#9-deployment)
-  - [Heroku Deployment](#heroku-deployment)
 - [10. Credits and Acknowledgments](#10-credits-and-acknowledgments)
 
 
@@ -106,7 +105,10 @@
 
 
 ### 2.3 Structure
-#### Userflow
+#### Database Design
+I opted to use a relational database as it allows for easier and more structured connections between related data. In order to visualise this my site data I used [Lucid Chart](https://www.lucidchart.com/) to design my database tables and how they would relate to one another.
+
+![Database Schema](assets/readme-img/database-design.jpg)
 
 ### 2.4 Skeleton
 #### Wireframes
@@ -123,11 +125,6 @@
 |Colours|![screenshot of colour palette](assets/readme-img/colours.jpg)|I chose to use a simple white, black and grey colour scheme in order to keep accessibility scores high. Given the majority of the site is fairly image heavy I also didn't want the background/text to over power the products. By keeping the colour palette clean, the products are kept the main focus of the site.|
 |Images|||
 
-## 3. Database Design
-I opted to use a relational database as it allows for easier and more structured connections between related data. In order to visualise this my site data I used [Lucid Chart](https://www.lucidchart.com/) to design my database tables and how they would relate to one another.
-
-![Database Schema](assets/readme-img/database-design.jpg)
-
 **Category**
 
 **Product**
@@ -138,9 +135,9 @@ I opted to use a relational database as it allows for easier and more structured
 
 **Order Line Item**
 
-## 4. Error Handling
+## 3. Error Handling
 
-## 5. Technologies Used
+## 4. Technologies Used
 ### Languages
 - [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -214,16 +211,52 @@ Stripe is in developer mode which allows for us to process test payments to chec
 |Declined|4000 0000 0000 0002|Any future date|Any 3 digits|
 
 
-## 6. Defensive Programming
+## 5. Defensive Programming
 
-## 7. Future Goals
+## 6. Future Goals
 
-## 8. Testing
+## 7. Testing
 
-## 9. Deployment
+## 8. Deployment
+**Creating the database**
+
+Due to ElephantSQL coming to the end of their life I decided to use Code Institutes Database Maker to create a database for this porject. During development I was using sqlite3 however this isn't usable within deployment.
+
+**Heroku CLI**
+
+Since I already have an account with Heroku I was able to do the majority of the deployment through the terminal.
+
+1. `heroku login -i` - You can either enter your credentials within the terminal or it will open a new browser winder allowing you to log in.
+
+2. `heroku create app-name` - You then create a new Heroku app, this name needs to be unique.
+
+3. `heroku config:set VAR_NAME='variable' --app app-name` - Adding any necessary enviroment variables will help with a number of things.
+    - `AWS_ACCESS_KEY_ID` - Connect to AWS S3 Bucket (Static and Media files)
+    - `AWS_SECRET_ACCESS_KEY` - Connect to AWS S3 Bucket (Static and Media files)
+    - `DATABASE_URL` - Connects to database
+    - `SECRET_KEY` - Connects to app
+    - `USE_AWS` - Allows use of AWS
+    - `DJANGO_DEBUG` - Set debug mode to True or False depending on if you are in development mode
+
+4. `git add .`
+   `git commit -m` - Creates a commit message
+
+5. `heroku git:remote -a app-name` - Links your Heroku app to Git repository
+
+6. `git push heroku main` - Pushes changes to both mainbranch and initates a build of your app
+
+7. `heroku run python3 manage.py migrate --app app-name` - If necessary, at this stage you can run any database migrations
+
+8. `heroku open --app app-name` - Opens the deployed app in a web browser
 
 
-## 10. Credits and Acknowledgments
+
+**Browser Deployment**
+
+I chose to connect my app to GitHub in order to manually deploy the app once I had finished with development. 
+
+
+## 9. Credits and Acknowledgments
 * [Affinity](https://affinity.serif.com/en-gb/designer/) - Used to resize images.
 * [Django](https://www.djangoproject.com/) - Used to create site.
 * [Code Institute DB Maker](https://dbs.ci-dbs.net/) - Used to create my database for deployment.
