@@ -85,23 +85,36 @@
 ### 2.2 Scope
 #### Features
 
-|Index Page|A simple landing page navigating users to various other pages of the site|
+|**Index Page**|A simple landing page navigating users to various other pages of the site|
 |:---:|---|
-|`Nav Bar`|A responsive navigation bar that allows the user to easily navigate around the site|
-|`H1`|Used for the logo/title|
-|`Large Button`|A button navigating the user to view all products|
-|`H4`|Used to inform user of the free delivery minimum|
+|`Nav Bar`|Used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 
-|All Products Page|A view for the users to view all products|
+|**All Products Page**|A view for the users to view all products|
 |:---:|---|
-|`Nav Bar`|A responsive navigation bar that allows the user to easily navigate around the site|
-|`H2`|Used for the page title|
-|`P`|Used to display the total number of products on the page|
-|`Select`|A dropdown box with a variety of sort options|
-|`img`|Used to display an image of the product and links to the specific product's description page|
-|`P`|Used to display the name of the product as well as the product price|
+|`Nav Bar`|Used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 
-|Product Detail Page||
+* Log In
+* Sign Up
+* Individual Product Page
+
+|**Shopping Bag**|A view for the users to view products in their shopping bag, allowing them to edit quantities or remove items and continue on to checkout page|
+|---|---|
+|`Nav Bar`|Used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
+|`Bag Item Table`|Used to display information about the products that are in the users shopping bag: Item image, size, quantity, subtotal|
+|`Quantity Editor`|Comprises of a button to decrease the quantity by 1, an input field that displays the current quantity and a button to increase the quantity by 1|
+|`Update` and `Remove`|Two anchor elements, `Update` updates the quantity of the item selected if changed. `Remove` removes the item from the bag completely|
+|`Total Section`|Below the bag item table is a section in which all totals are shown, bag total, delivery total and grand total. It also displays a message notifying the customer on how much more they need to spend in order to qualify for free shipping|
+|`Keep Shopping` and `Secure Checkout`|At the bottom of the page are two buttons navigating users either back to the products page in order to keep shopping or to continue on to checkout page|
+|`Empty Bag Page`|If the user doesn't have any items in their bag then they will see a message informing them of their empty bag and a button to direct the user back to the products page in order to keep shopping|
+
+
+* Checkout Page
+* About Us Page
+* Frequently Asked Questions Page
+* User -  Profile Page
+* Admin - Add Product Page
+* Admin - Edit Product Page
 
 
 ### 2.3 Structure

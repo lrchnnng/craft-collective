@@ -66,6 +66,9 @@
 |Product Detail Page Testing|Yes/No|
 |---|:---:|
 
+|Shopping Bag Testing|Yes/No|
+|---|:---:|
+
 |Checkout Page Testing|Yes/No|
 |---|:---:|
 
