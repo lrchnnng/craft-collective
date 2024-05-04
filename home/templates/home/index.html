@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-<!-- Page Header -->
+<!-- Empty page header to add padding at top of page-->
 <div class="container header-container">
     <div class="row">
         <div class="col-12">
@@ -14,11 +14,16 @@
 {% block content %}
 <div class="container-fluid landing-page">
     <div class="row">
-        <div class="col-12 col-md-6 text-center landing-text my-auto">
+        <div class="col-12 col-md-6 text-center my-auto">
+            <!-- Page Header-->
             <h1 class="logo-font my-4 text-black">craft collective.</h1>
-            <a href="{% url 'products' %}" type="button" class="btn btn-dark btn-lg text-light">shop now</a>
+            <!-- Shop Now button -->
+            <a href="{% url 'products' %}" type="button" class="btn btn-dark btn-lg text-light logo-font" 
+               aria-label="shop now">shop now</a>
+            <!-- Free Delivery Information -->
             <p class="my-4">Free delivery on orders over £{{ free_delivery_threshold }}</p>
         </div>
+        <!-- Landing Image -->
         <div class="col-12 col-md-6 landing-img">
             <img src="media/images/24-BG02.webp" width="100%" alt="">
         </div>

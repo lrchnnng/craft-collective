@@ -87,11 +87,12 @@
 
 |**Index Page**|A simple landing page navigating users to various other pages of the site|
 |:---:|---|
-|`Nav Bar`|Used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Hero Section`|Including a page title with the brand name, a large button directing users to the products page and an image showcasing the type of product the site sells|
 
 |**All Products Page**|A view for the users to view all products|
 |:---:|---|
-|`Nav Bar`|Used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 
 * Log In
 * Sign Up
@@ -99,7 +100,7 @@
 
 |**Shopping Bag**|A view for the users to view products in their shopping bag, allowing them to edit quantities or remove items and continue on to checkout page|
 |---|---|
-|`Nav Bar`|Used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 |`Bag Item Table`|Used to display information about the products that are in the users shopping bag: Item image, size, quantity, subtotal|
 |`Quantity Editor`|Comprises of a button to decrease the quantity by 1, an input field that displays the current quantity and a button to increase the quantity by 1|
