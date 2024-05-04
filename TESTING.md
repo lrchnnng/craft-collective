@@ -185,8 +185,8 @@
 |index.html|✓|
 |about_us.html|✓|
 |faq.html|✓|
-|checkout.html||
-|checkout_success.html||
+|checkout.html|✓|
+|checkout_success.html|✓|
 |bag.html|✓|
 
 ### CSS Validation
