@@ -93,6 +93,24 @@
 |All Products|A view for the users to view all products|
 |:---:|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
+|`Category Name`|If user has selected a specific category, the name of the category is displayed at the top of the page|
+|`Sort By`|A dropdown box allowing the user to sort the products by a variety of criteria (i.e. Price low to high, Category A-Z)|
+|`Search Term`|If the user has searched for a product/description this area will display the searched term|
+|`Product Card`|Displays the image, name and price of each product|
+|`Edit` and `Delete`|If the user is logged in as an admin these buttons allow them to edit or delete the product from the site|
+|`Back to top`|A button that appears at the bottom right of the screen when scrolling, when clicked, takes user back to the top of the page|
+
+
+|Product Details|A view for the users to view extra details on a specific product|
+|:---:|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Product Image`|Displays an image of the product|
+|`Product Details`|Displays information about the product, name, price, description|
+|`Edit` and `Delete`|If the user is logged in as an admin these buttons allow them to edit or delete the product from the site|
+|`Size Selection`|If the product has a size associated with it then a dropdown box will show allowing the user to select a size|
+|`Quantity Selector`|Comprises of a button to decrease the quantity by 1, an input field that displays the current quantity and a button to increase the quantity by 1|
+
 
 |Login|A page for users to log in to their previously registered account|
 |:---:|---|
