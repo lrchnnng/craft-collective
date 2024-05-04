@@ -183,6 +183,9 @@
 |---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
+|`Delivery Information`|A form for users to input default delivery information at the bottom of the form is an `Update Information` button that submits the form and saves the information for later use at checkout|
+|`Order History`|A table of information displaying previous orders. The table shows order numbers, order dates, products in each order and the grand total of the order. If the user clicks the order number they are redirected to the order confirmation page|
+|`Keep Shopping`|A button at the bottom of the page that redirects the user back to the products page|
 
 |Admin - Product Management|A page allowing the site owner to add/edit products on the site|
 |---|---|
