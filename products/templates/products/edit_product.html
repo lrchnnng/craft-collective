@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+<!-- Page Header -->
 <div class="container header-container">
     <div class="row">
         <hr>
@@ -14,13 +15,21 @@
 {% block content %}
 
 <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mb-4">
+    
+    <!-- Subtitle -->
     <h5 class="text-muted text-center">Edit Product</h5>
+    
+    <!-- Edit Product Form -->
     <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form | crispy }}
         <div class="text-center">
-            <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-            <button class="btn btn-black rounded-0" type="submit">Update Product</button>
+            <!-- Cancel Button -->
+            <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}" 
+               aria-label="Cancel editing product">Cancel</a>
+            
+            <!-- Edit Product Button-->
+            <button class="btn btn-black rounded-0" type="submit" aria-label="Update product">Update Product</button>
         </div>
     </form>
 </div>

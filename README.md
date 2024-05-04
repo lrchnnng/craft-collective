@@ -184,10 +184,14 @@
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
 
-|Admin - Add/Edit Product Page|A page allowing the site owner to add/edit products on the site|
+|Admin - Product Management|A page allowing the site owner to add/edit products on the site|
 |---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
+|`Subtitle`|Defines if the page is to add a new product or edit a currently existing product|
+|`Add Product Form` or `Edit Product Form`|If the user is adding a new product they are prompted to fill in an empty form in order to add a new product to the store. If the user is editing an existing product the same form will be preloaded with existing data about the selected product|
+|`Cancel`|A button allowing the user to cancel the adding or editing of the product. This button redirects the user back to the products page|
+|`Add/Update Product`|Depening on the page, this button submits the form and either adds or updates the product information|
 
 #### Error Handling
 
