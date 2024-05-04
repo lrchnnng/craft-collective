@@ -85,20 +85,26 @@
 ### 2.2 Scope
 #### Features
 
-|**Index Page**|A simple landing page navigating users to various other pages of the site|
+|Index/Home|A simple landing page navigating users to begin shopping|
 |:---:|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Hero Section`|Including a page title with the brand name, a large button directing users to the products page and an image showcasing the type of product the site sells|
 
-|**All Products Page**|A view for the users to view all products|
+|All Products|A view for the users to view all products|
 |:---:|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 
-* Log In
-* Sign Up
-* Individual Product Page
+|Login|A page for users to log in to their previously registered account|
+|:---:|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
 
-|**Shopping Bag**|A view for the users to view products in their shopping bag, allowing them to edit quantities or remove items and continue on to checkout page|
+|Sign Up|A page for users to sign up for an account|
+|:---:|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
+
+|Shopping Bag|A view for the users to view products in their shopping bag, allowing them to edit quantities or remove items and continue on to checkout page|
 |---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
@@ -109,13 +115,34 @@
 |`Keep Shopping` and `Secure Checkout`|At the bottom of the page are two buttons navigating users either back to the products page in order to keep shopping or to continue on to checkout page|
 |`Empty Bag Page`|If the user doesn't have any items in their bag then they will see a message informing them of their empty bag and a button to direct the user back to the products page in order to keep shopping|
 
+|Checkout|A page allowing the user to input delivery and billing information in order to complete their purchase|
+|:---:|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
 
-* Checkout Page
-* About Us Page
-* Frequently Asked Questions Page
-* User -  Profile Page
-* Admin - Add Product Page
-* Admin - Edit Product Page
+|About Us|A page giving the user information about the brand/site owners|
+|:---:|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
+|`Image`|An image of the site owners|
+|`About us`|A couple of paragraphs explaining the history of the brand and who they are|
+
+|Frequently Asked Questions|A page showing frequently asked questions about the site/brand|
+|:---:|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
+|`Accordian`|A series of accordian dropdowns, displaying a question and allowing users to view the answer when clicked|
+|`Keep Shopping`|A button directing the user to the product page|
+
+|User - Profile Page|A personalised page allowing users to update their delivery information and view previous orders|
+|:---:|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
+
+|Admin - Add/Edit Product Page|A page allowing the site owner to add/edit products on the site|
+|:---:|---|
+|`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
+|`Page Header`|Used to identify the page|
 
 
 ### 2.3 Structure
