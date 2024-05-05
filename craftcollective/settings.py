@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['craft-collective-04be76258b34.herokuapp.com', '8000-lrchnnng-craftcollectiv-ndbyce7prw1.ws-eu111.gitpod.io']
 
