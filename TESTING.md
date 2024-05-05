@@ -156,8 +156,8 @@
 ### HTML Validation
 |Page|Y/N|
 |---|:---:|
-|templates/base.html||
-|templates/allauth/base.html||
+|templates/base.html|✓|
+|templates/allauth/base.html|✓|
 |account_innactive.html|✓|
 |templates/allauth/account/base.html|✓|
 |email_confirm.html|✓|
@@ -174,7 +174,7 @@
 |signup.html|✓|
 |verification_sent.html|✓|
 |verified_email_required.html|✓|
-|main-nav.html||
+|main-nav.html|✓|
 |mobile-top-header.html||
 |toast_error.html|✓|
 |Ttoast_info.html|✓|

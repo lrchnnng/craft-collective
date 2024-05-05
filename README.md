@@ -198,6 +198,10 @@
 
 #### Error Handling
 
+#### Defensive Programming
+
+#### Future Goals
+
 
 ### 2.3 Structure
 #### Database Design
@@ -212,6 +216,7 @@ I opted to use a relational database as it allows for easier and more structured
 ![Mobile Wireframes of main pages](assets/readme-img/mobile-wireframes.jpg)
 
 **Desktop**
+![Desktop wireframes of main pages](assets/readme-img/desktop-wireframes.jpg)
 
 ### 2.5 Surface
 | Type | Image | Description|
@@ -303,10 +308,6 @@ Stripe is in developer mode which allows for us to process test payments to chec
 |Require Authorisation|4000 0025 0000 3155|Any future date|Any 3 digits|
 |Declined|4000 0000 0000 0002|Any future date|Any 3 digits|
 
-
-## 5. Defensive Programming
-
-## 6. Future Goals
 
 ## 7. Testing
 
