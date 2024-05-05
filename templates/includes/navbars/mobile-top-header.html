@@ -25,23 +25,23 @@
 
     <!-- Account -->
     <li class="list-inline-item">
-        <div class="dropdown d-lg-none">
+        <div class="dropdown-center d-lg-none">
             <button class="btn text-dark text-align-right" type="button" id="user-options" data-toggle="dropdown"
                 aria-expanded="false">
                 <div class="text-center">
                     <i class="fas fa-user fa-lg"></i>
                 </div>
             </button>
-            <ul class="dropdown-menu border-0" aria-labelledby="user-options">
+            <ul class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
-                <li><a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a></li>
+                <li><a href="{% url 'add_product' %}" class="dropdown-item text-right">Product Management</a></li>
                 {% endif %}
-                <li><a href="{% url 'profile' %}" class="dropdown-item">My Profile</a></li>
-                <li><a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a></li>
+                <li><a href="{% url 'profile' %}" class="dropdown-item text-right">My Profile</a></li>
+                <li><a href="{% url 'account_logout' %}" class="dropdown-item text-right">Logout</a></li>
                 {% else %}
-                <li><a href="{% url 'account_signup' %}" class="dropdown-item">Register</a></li>
-                <li><a href="{% url 'account_login' %}" class="dropdown-item">Login</a></li>
+                <li><a href="{% url 'account_signup' %}" class="dropdown-item text-right">Register</a></li>
+                <li><a href="{% url 'account_login' %}" class="dropdown-item text-right">Login</a></li>
                 {% endif %}
             </ul>
         </div>
