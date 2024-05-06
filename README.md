@@ -197,10 +197,19 @@
 |`Add/Update Product`|Depening on the page, this button submits the form and either adds or updates the product information|
 
 #### Error Handling
+`get_object_or_404` - Using this function within my Python code, in the event that an object within my database cannot be found a 404 error code is created.
+
 
 #### Defensive Programming
+Jinja templating 
+
+python decorators
+
 
 #### Future Goals
+Changing database to include metal type 
+Changing database to many to many field in order to add more categories 
+
 
 
 ### 2.3 Structure
