@@ -94,7 +94,7 @@
 6. I want to be able to sort a specific category of product.
 7. I want to be able to search for a product by name or description.
 8. I want to be able to easily see what I've searched for and the number of results.
-9. I want to be able to easily select the size, metal type and quantity of a product when purchasing it.
+9. I want to be able to easily select the size, and quantity of a product when purchasing it.
 10. I want to be able to view items in my bag before purchasing.
 11. I want to be abe to adjust the quantity of the individual items in my bag.
 12. I want to be able to easily enter payment information.
@@ -125,37 +125,37 @@
 #### Registration and User Accounts
 |User|I want to...|In order to...|Explaination|Image|
 |---|---|---|---|---|
-|Site User|Easily register for an account|Have personal account and be able to view my profile|Explain|![Desc](link)|
-|Site User|Easily login or logout|Access my personal account information|Explain|![Desc](link)|
-|Site User|Easily recover my password in case I forget it|Recover access to my account|Explain|![Desc](link)|
+|Site User|Easily register for an account|Have personal account and be able to view my profile|Users can register for an account on the register page|![Register Page](assets/testing-img/signup.png)|
+|Site User|Easily login or logout|Access my personal account information|User can log in and log out of their account through the nav bar|![Nav Bar - Logged In](assets/testing-img/nav-account-logged-in-admin.png) ![Nav Bar - Logged Out](assets/testing-img/nav-account-logged-out.png) ![Logout Page](assets/testing-img/signout.png)|
+|Site User|Easily recover my password in case I forget it|Recover access to my account|If the user has forgotten their password they can follow a link from the login page to the password reset page. Once they fill in the login form they will recieve an email with a link to reset their password|![Login Page](assets/testing-img/signin.png) ![Password Reset Page](assets/testing-img/password-reset.png) ![Password Reset Message](assets/testing-img/password-reset-message.png) ![Password Reset - Email](assets/testing-img/password-reset-email.png)|
 |Site User|Receive an email confirmation after registering|Verify that my account registration was successful|Explain|![Desc](link)|
-|Site User|Have a personalised user profile|View personal order history and order confirmations, and save my payment information|Explain|![Desc](link)|
+|Site User|Have a personalised user profile|View personal order history and order confirmations, and save my payment information|Users have a personal profile page accessed through the nav bar account dropdown, This displays their default delivery information allowing them to save and update their information as well as showing any previous purchases|![Nav Bar - Logged In](assets/testing-img/nav-account-logged-in-admin.png) ![Profile Page](assets/testing-img/profile-page.png)|
 
 #### Sorting and Searching
 |User|I want to...|In order to...|Explaination|Image|
 |---|---|---|---|---|
-|Shopper|Sort the list of available products|Easily identify the best rated, best prices and categorically sorted products|Explain|![Desc](link)|
-|Shopper|Sort a specific category of product|Find the best-priced or best-rated products in a specific category, or sort the products in that category by name|Explain|![Desc](link)|
-|Shopper|Search for a product by name or description|Find specific product I’d like to purchase|Explain|![Desc](link)|
-|Shopper|Easily see what I’ve searched for and the number of results|Quickly decide whether the product I want is available |Explain|![Desc](link)|
+|Shopper|Sort the list of available products|Easily identify the best rated, best prices and categorically sorted products|On the products page there is a `sort by` dropdown box that allows the user to sort the products by various criteria|![Sort - Products](assets/testing-img/product-sort.png)|
+|Shopper|Sort a specific category of product|Find the best-priced or best-rated products in a specific category, or sort the products in that category by name|Within each category page the same sorting dropdwn box is available for users to sort each individual category or product|![Sort - Rings](assets/testing-img/rings-sort.png)|
+|Shopper|Search for a product by name or description|Find specific product I’d like to purchase|In the nav bar is a search bar that allows users to search for terms that appear within both the product title and the product descriptions|![Search Bar - Mobile](assets/testing-img/search-mobile.png) ![Search Bar - Desktop](assets/testing-img/nav-bar-desktop.png)|
+|Shopper|Easily see what I’ve searched for and the number of results|Quickly decide whether the product I want is available |After searching, providing the search is successful, below the page title and product count is the term used to search|![Search Success](assets/testing-img/search-success.png)|
 
 #### Purchasing and Checkout
 |User|I want to...|In order to...|Explaination|Image|
 |---|---|---|---|---|
-|Shopper|Easily select the size, metal type and quantity of a product when purchasing it|Ensure I don't accidentally select the wrong product, quantity, size or metal type.|Explain|![Desc](link)|
-|Shopper|View items in my bag to be purchased|Identify the total cost of my purchases and all items I will receive|Explain|![Desc](link)|
-|Shopper|Adjust the quantity of individual items in my bag|Easily make changes to my purchase before checkout|Explain|![Desc](link)|
-|Shopper|Easily enter payment information|Check out quickly and with no hassles|Explain|![Desc](link)|
-|Shopper|Feel my personal and payment information is safe and secure|Confidently provide the needed information to make a purchase|Explain|![Desc](link)|
-|Shopper|View an order confirmation after checkout|Verify that I haven't make any mistakes|Explain|![Desc](link)|
-|Shopper|Receive an email confirmation after checkout|Keep the confirmation of what I have purchased for my records|Explain|![Desc](link)|
+|Shopper|Easily select the size and quantity of a product when purchasing it|Ensure I don't accidentally select the wrong product, quantity or size.|In the product details page, if the product has a size there is a dropdown option to select the size as well as a quantity selector|![Product Detail Page](assets/testing-img/product-options.png)|
+|Shopper|View items in my bag to be purchased|Identify the total cost of my purchases and all items I will receive|The shopping bag page allows the user to see the items within their bag. When an item is added to their bag a success popup message showing the contents of the bag|![Shopping Bag Page](assets/testing-img/shopping-bag.png) ![Toast Success](assets/testing-img/success-toast.png)|
+|Shopper|Adjust the quantity of individual items in my bag|Easily make changes to my purchase before checkout|Within the shopping bag there is a quantity selector for each item, the minus button reduces the product quantity by 1, the plus button increases the product quantity by 1. The user can also type their desired quantity into the input box in the centre. Once the user has increased or decreased the quantity the user must select `Update` in order to save the new quantity. Clicking `Delete` will remove the item from the bag completely|![Shopping Bag](assets/testing-img/shopping-bag.png)|
+|Shopper|Easily enter payment information|Check out quickly and with no hassles|At the checkout page there is a single payment input field making payment easy and fast. If the user has an account and they have already entered their delivery details, then their delivery information will be prefilled within the checkout form|![Checkout Page](assets/testing-img/checkout-page.png)|
+|Shopper|Feel my personal and payment information is safe and secure|Confidently provide the needed information to make a purchase|The payment page is a https page making the user's payment and personal information secure|![Secure URL](assets/testing-img/secure-url.png)|
+|Shopper|View an order confirmation after checkout|Verify that I haven't make any mistakes|Upon successful completion of an order the user will be redirected to the order confirmation page with their order details. The user can also access previous order confirmation pages through their personal profile page and clicking the order number|![Order confirmation](assets/testing-img/order-confirmation.png) ![Profile Page](assets/testing-img/profile-page.png)|
+|Shopper|Receive an email confirmation after checkout|Keep the confirmation of what I have purchased for my records|Once the user has successfully completed their purchase, they will receive an confirmation email outlining their order details|![Desc](link)|
 
 #### Admin and Management
 |User|I want to...|In order to...|Explaination|Image|
 |---|---|---|---|---|
-|Store Owner|Add a product|Add new items to my store|Explain|![Desc](link)|
-|Store Owner|Edit/update a product|Change product prices, descriptions, images and other product details|Explain|![Desc](link)|
-|Store Owner|Delete a product|Remove items that are no longer for sale|Explain|![Desc](link)|
+|Store Owner|Add a product|Add new items to my store|Admin users are able to add products by selecting product management in the account dropdown within the nav bar|![Nav Bar - Logged In](assets/testing-img/nav-account-logged-in-admin.png) ![Add Product Page](assets/testing-img/add-product.png)|
+|Store Owner|Edit/update a product|Change product prices, descriptions, images and other product details|Admin users can edit products, they can do so by clicking the edit button beneath the products on the products page or within the description page. The edit product page is similar to the add product page however the input fields are already filled out with the product information|![Edit/Delete Options](assets/testing-img/edit-button.png) ![Product Details Page](assets/testing-img/product-detail-page.png) ![Edit Product Page](assets/testing-img/edit-product.png)|
+|Store Owner|Delete a product|Remove items that are no longer for sale|Admin users are able to delete products from both the product page and the product detail pages by simply clicking `Delete`|![Edit/Delete Button](assets/testing-img/edit-button.png) ![Product Detail Page](assets/testing-img/product-detail-page.png)|
 
 ## Automated Testing
 ### HTML Validation
