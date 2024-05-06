@@ -39,8 +39,9 @@
                 
                 <!-- Product Category -->
                 <small>
-                    <p class="text-muted">
-                        <i class="fas fa-tag"></i> {{ product.category }}</p>
+                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category }}">
+                            <i class="fas fa-tag"></i> {{ product.category }}
+                        </a>
                 </small>
 
                 <!-- If user is an admin -->
