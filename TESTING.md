@@ -47,6 +47,9 @@
 
 |Index Page Testing|Yes/No|
 |---|:---:|
+|Fonts and Image have loaded|✓|
+|`Shop Now` button redirects to products page|✓|
+|Free delivery threshold is displayed|✓|
 
 |Login Testing|Yes/No|
 |---|:---:|
