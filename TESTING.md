@@ -216,4 +216,12 @@
     - Added a print statement to check that the _send_confirmation_email() function is being called
         - Statement not printed in terminal indicating an issue with the function being called and executed.
     - In python shell I tested the email functionality outside of the webhook handler context in order to isolate the issue. 
-        - The confirmation email successfully printed in the terminal 
+        - The confirmation email successfully printed in the terminal
+
+- Bracelet category page not including products in the bracelet category
+    - Checked spelling issues in URL link
+        - No issues with spelling, products still not appearing on the page. 
+    - Check to see if product was included in bracelets cateogory by including a category section in the product detail page
+        - Products are save in the category but till aren't appearing on the category page.
+    - Created a jinja templating link around the category section on product detail in order to generate a link to the bracelets page
+        - Products still not appearing on the page
