@@ -45,7 +45,6 @@
 |Toasts Testing|Yes/No|
 |---|:---:|
 
-
 |Index Page Testing|Yes/No|
 |---|:---:|
 
@@ -118,10 +117,10 @@
 #### Viewing and Navigating
 |User|I want to...|In order to...|Explaination|Image|
 |---|---|---|---|---|
-|Shopper|View a list of products|Select products to purchase|Explain|![Desc](link)|
-|Shopper|View specific categories of products|Quickly find products I'm interested in without having to search through all products|Explain|![Desc](link)|
-|Shopper|View individual product details|Identify the price, description, product image, available sizes and metal types|Explain|![Desc](link)|
-|Shopper|Easily view the total of the purchases at any time|Avoid spending too much|Explain|![Desc](link)|
+|Shopper|View a list of products|Select products to purchase|Within the products page there is a list of all of the products available across the site|![All Products Page](assets/testing-img/all-products.png)|
+|Shopper|View specific categories of products|Quickly find products I'm interested in without having to search through all products|Within the nav bar there are category specific links to each category of product. This link directs the user to the category page|![Nav Bar - Desktop](assets/testing-img/nav-bar-desktop.png) ![Earrings Page](assets/testing-img/earrings-page.png)|
+|Shopper|View individual product details|Identify the price, description, product image, available sizes|When the user selects a product they are directed to the product detail page|![Product Detail Page](assets/testing-img/product-detail-page.png)|
+|Shopper|Easily view the total of the purchases at any time|Avoid spending too much|When the user adds a product to the bag a popup message is created to notify the user that they have successfully added the item to the cart. The toast diplays the bag contents and the price of the items within the bag. The shopping bag total within the nav bar is also updated to reflect the bag total, making it easy to keep track of the bag total across the whole site|![Toast - Success](assets/testing-img/success-toast.png) ![Nav Bar Bag Total](assets/testing-img/nav-bag.png)|
 
 #### Registration and User Accounts
 |User|I want to...|In order to...|Explaination|Image|
