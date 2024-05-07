@@ -34,7 +34,7 @@
 |`about us.` links to about us page|✓|
 |`FAQ.` links to FAQ page|✓|
 |`all products.` links to all products page|✓|
-|`bracelets.` links to bracelets category page|**TO FIX**|
+|`bracelets.` links to bracelets category page|✓|
 |`earrings.` links to earrings category page|✓|
 |`necklaces.` links to necklaces category page|✓|
 |`rings` links to rings category page|✓|
@@ -44,6 +44,7 @@
 
 |Toasts Testing|Yes/No|
 |---|:---:|
+|`Alert` Toast appears when editing a product|✓|
 
 |Index Page Testing|Yes/No|
 |---|:---:|
@@ -82,9 +83,25 @@
 
 |Product Management Page Testing|Yes/No|
 |---|:---:|
-
-|Toast Testing|Yes/No|
-|---|:---:|
+|`Add Product` - Fonts and form have fully loaded|✓|
+|`Add Product` - 'Category' dropdown shows all available categories|✓|
+|`Add Product` - 'Name' field is required|✓|
+|`Add Product` - 'Description' field is required|✓|
+|`Add Product` - 'Price' field is required|✓|
+|`Add Product` - 'Has sizes' dropdown works and shows available options|✓|
+|`Add Product` - 'Choose File' successfully adds file to the form|✓|
+|`Add Product` - `Cancel` button redirects back to products page|✓|
+|`Add Product` - `Add Product` button adds product to the database and redirects admin user to the products detail page|✓|
+|`Edit Product` - Fonts and form have fully loaded|✓|
+|`Edit Product` - Form is prefilled with existing product information |✓|
+|`Edit Product` - 'Category' dropdown shows all available categories|✓|
+|`Edit Product` - 'Name' field is required|✓|
+|`Edit Product` - 'Description' field is required|✓|
+|`Edit Product` - 'Price' field is required|✓|
+|`Edit Product` - 'Has sizes' dropdown works and shows available options|✓|
+|`Edit Product` - 'Choose File' successfully adds file to the form|✓|
+|`Edit Product` - `Cancel` button redirects back to products page|✓|
+|`Edit Product` - `Update Product` button updates product information to the database and redirects admin user to the products detail page|✓|
 
 ### User Story Testing
 
@@ -211,19 +228,23 @@
 
 ### Python Testing 
 
+### Lighthouse Testing
+
 ## Known Bugs and Fixes
 - Email confirmation not loading in terminal
-    - Attempted to fix with try/except statements, printing the error in the terminal if there is an issue sending the email. 
-        - No issues with sending the email detected but confirmation still not showing in the terminal.
-    - Added a print statement to check that the _send_confirmation_email() function is being called
-        - Statement not printed in terminal indicating an issue with the function being called and executed.
-    - In python shell I tested the email functionality outside of the webhook handler context in order to isolate the issue. 
-        - The confirmation email successfully printed in the terminal
+    - **Fix Attempt:** Attempted to fix with try/except statements, printing the error in the terminal if there is an issue sending the email. 
+        - **Outcome:** No issues with sending the email detected but confirmation still not showing in the terminal.
+    - **Fix Attempt:** Added a print statement to check that the _send_confirmation_email() function is being called
+        - **Outcome:** Statement not printed in terminal indicating an issue with the function being called and executed.
+    - **Fix Attempt:** In python shell I tested the email functionality outside of the webhook handler context in order to isolate the issue. 
+        - **Outcome:** The confirmation email successfully printed in the terminal
 
 - Bracelet category page not including products in the bracelet category
-    - Checked spelling issues in URL link
-        - No issues with spelling, products still not appearing on the page. 
-    - Check to see if product was included in bracelets cateogory by including a category section in the product detail page
-        - Products are save in the category but till aren't appearing on the category page.
-    - Created a jinja templating link around the category section on product detail in order to generate a link to the bracelets page
-        - Products still not appearing on the page
+    - **Fix Attempt:** Checked spelling issues in URL link
+        - **Outcome:** No issues with spelling, products still not appearing on the page. 
+    - **Fix Attempt:** Check to see if product was included in bracelets cateogory by including a category section in the product detail page
+        - **Outcome:** Products are save in the category but till aren't appearing on the category page.
+    - **Fix Attempt:** Created a jinja templating link around the category section on product detail in order to generate a link to the bracelets page
+        - **Outcome:** Products still not appearing on the page
+    - **Fix Attempt:** On the deployed site I logged into the Django admin panel to see if there was an issue with the category name. 
+        - **Outcome:** Friendly name and Name were mixed up, fixed the typo and the products are now appearing in the category page

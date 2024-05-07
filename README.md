@@ -5,7 +5,7 @@
 
 ![Image of site on devices](link)
 
-[Link to live site](link)
+[Link to live site](https://craft-collective-04be76258b34.herokuapp.com/)
 
 # Table of Contents <!-- omit in toc -->
 - [1. Website Information](#1-website-information)
@@ -30,15 +30,15 @@
 * Index
 * Log In
 * Sign Up
-* All Products Page
-* Individual Product Page
+* Products
+* Product Description
 * Shopping Bag
-* Checkout Page
-* About Us Page
-* Frequently Asked Questions Page
+* Checkout
+* Checkout Success
+* About Us
+* Frequently Asked Questions
 * User -  Profile Page
-* Admin - Add Product Page
-* Admin - Edit Product Page
+* Admin - Add/Edit Product Page
 
 ## 2. UX/UI Design
 ### 2.1 Strategy
@@ -351,7 +351,6 @@ Since I already have an account with Heroku I was able to do the majority of the
 7. `heroku run python3 manage.py migrate --app app-name` - If necessary, at this stage you can run any database migrations
 
 8. `heroku open --app app-name` - Opens the deployed app in a web browser
-
 
 
 **Browser Deployment**
