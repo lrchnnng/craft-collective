@@ -349,28 +349,28 @@ I ran all of my python files through Code Institute's Python Linter to check for
 |urls.py|![Linter Result - urls.py](assets/testing-img/pylinter-craftcollective-urls.png)|
 |wsgi.py|![Linter Result - wsgi.py](assets/testing-img/pylinter-craftcollective-wsgi.png)|
 
-|home app|Screenshot|Issues & Fixes|
-|---|---|---|
-|apps.py|||
-|urls.py|||
-|views.py|||
+|home app|Screenshot|
+|---|---|
+|apps.py|![Linter Result - apps.py](assets/testing-img/pylinter-home-apps.png)|
+|urls.py|![Linter Result - urls.py](assets/testing-img/pylinter-home-urls.png)|
+|views.py|![Linter Result - views.py](assets/testing-img/pylinter-home-views.png)|
 
-|products app|Screenshot|Issues & Fixes|
-|---|---|---|
-|admin.py|||
-|apps.py|||
-|forms.py|||
-|models.py|||
-|urls.py|||
-|views.py|||
+|products app|Screenshot|
+|---|---|
+|admin.py|![Linter Result - admin.py](assets/testing-img/pylinter-products-admin.png)|
+|apps.py|![Linter Result - apps.py](assets/testing-img/pylinter-products-apps.png)|
+|forms.py|![Linter Result - forms.py](assets/testing-img/pylinter-products-forms.png)|
+|models.py|![Linter Result - models.py](assets/testing-img/pylinter-products-models.png)|
+|urls.py|![Linter Result - urls.py](assets/testing-img/pylinter-products-urls.png)|
+|views.py|![Linter Result - views.py](assets/testing-img/pylinter-products-views.png)|
 
-|profiles app|Screenshot|Issues & Fixes|
-|---|---|---|
-|apps.py|||
-|forms.py|||
-|models.py|||
-|urls.py|||
-|views.py|||
+|profiles app|Screenshot|
+|---|---|
+|apps.py|![Linter Result - apps.py](assets/testing-img/pylinter-profiles-apps.png)|
+|forms.py|![Linter Result - forms.py](assets/testing-img/pylinter-profiles-forms.png)|
+|models.py|![Linter Result - models.py](assets/testing-img/pylinter-profiles-models.png)|
+|urls.py|![Linter Result - urls.py](assets/testing-img/pylinter-profiles-urls.png)|
+|views.py|![Linter Result - views.py](assets/testing-img/pylinter-profiles-views.png)|
 
 ### Lighthouse Testing
 |Page|Test No.|Screenshot|Issues|Fix|
