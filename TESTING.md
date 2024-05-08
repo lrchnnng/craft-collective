@@ -301,10 +301,91 @@
 |profile.css||
 
 ### Wave Accessibility Evaluation
+|Index|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|About Us|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Sign Up|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Products|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Product Detail|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Shopping Bag|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Checkout|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|User - Profile|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Admin - Add/Edit Product|Test 1|![Desc](link)|Issue 1 - |Fix 1|
 
-### Python Testing 
+### Python Testing
+I ran all of my python files through Code Institute's Python Linter to check for any semantic or stylistic problems. I also utilised the Flake8 extension in order to highlight any issues within my py files.
+
+|Main Files|Screenshot|
+|---|---|
+|custom_storages.py|![Linter Result - custom-storages.py](assets/testing-img/pylinter-main-custom-storages.png)|
+|env.py|![Linter Result - env.py](assets/testing-img/pylinter-main-env.png)|
+|manage.py|![Linter Result - manage.py](assets/testing-img/pylinter-main-manage.png)|
+
+|bag app|Evidence|
+|---|---|
+|templatetags/bag_tools.py|![Linter Result - bag_tools.py](assets/testing-img/pylinter-bag-bag-tools.png)|
+|apps.py|![Linter Result - apps.py](assets/testing-img/pylinter-bag-apps.png)|
+|contexts.py|![Linter Result - contexts.py](assets/testing-img/pylinter-bag-contexts.png)|
+|urls.py|![Linter Result - urls.py](assets/testing-img/pylinter-bag-urls.png)|
+|views.py|![Linter Result - contexts.py](assets/testing-img/pylinter-bag-views.png)|
+
+|checkout app|Screenshot|
+|---|---|
+|admin.py|![Linter Result - admin.py](assets/testing-img/pylinter-checkout-admin.png)|
+|apps.py|![Linter Result - apps.py](assets/testing-img/pylinter-checkout-apps.png)|
+|forms.py|![Linter Result - forms.py](assets/testing-img/pylinter-checkout-forms.png)|
+|models.py|![Linter Result - models.py](assets/testing-img/pylinter-checkout-models.png)|
+|signals.py|![Linter Result - signals.py](assets/testing-img/pylinter-checkout-signals.png)|
+|urls.pyx|![Linter Result - urls.py](assets/testing-img/pylinter-checkout-urls.png)|
+|views.py|![Linter Result - views.py](assets/testing-img/pylinter-checkout-views.png)|
+|webhook_handler.py|![Linter Result - webhook_handler.py](assets/testing-img/pylinter-checkout-webhook-handler.png)|
+|webhooks.py|![Linter Result - webhooks.py](assets/testing-img/pylinter-checkout-webhooks.png)|
+
+|craftcollective app|Screenshot|
+|---|---|
+|asgi.py|![Linter Result - asgi.py](assets/testing-img/pylinter-craftcollective-asgi.png)|
+|settings.py|![Linter Result - settings.py](assets/testing-img/pylinter-craftcollective-settings.png)|
+|urls.py|![Linter Result - urls.py](assets/testing-img/pylinter-craftcollective-urls.png)|
+|wsgi.py|![Linter Result - wsgi.py](assets/testing-img/pylinter-craftcollective-wsgi.png)|
+
+|home app|Screenshot|Issues & Fixes|
+|---|---|---|
+|apps.py|||
+|urls.py|||
+|views.py|||
+
+|products app|Screenshot|Issues & Fixes|
+|---|---|---|
+|admin.py|||
+|apps.py|||
+|forms.py|||
+|models.py|||
+|urls.py|||
+|views.py|||
+
+|profiles app|Screenshot|Issues & Fixes|
+|---|---|---|
+|apps.py|||
+|forms.py|||
+|models.py|||
+|urls.py|||
+|views.py|||
 
 ### Lighthouse Testing
+|Page|Test No.|Screenshot|Issues|Fix|
+|---|---|---|---|---|
+|Index|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|About Us|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Sign Up|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Products|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Product Detail|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Shopping Bag|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Checkout|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|User - Profile|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Admin - Add/Edit Product|Test 1|![Desc](link)|Issue 1 - |Fix 1|
 
 ## Known Bugs and Fixes
 - Email confirmation not loading in terminal
@@ -324,7 +405,3 @@
         - **Outcome:** Products still not appearing on the page
     - **Fix Attempt:** On the deployed site I logged into the Django admin panel to see if there was an issue with the category name. 
         - **Outcome:** Friendly name and Name were mixed up, fixed the typo and the products are now appearing in the category page
-
-
----
-[Back To Top](#testing)

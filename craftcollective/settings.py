@@ -1,5 +1,4 @@
 import os
-import env
 import dj_database_url
 from pathlib import Path
 
@@ -15,7 +14,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['craft-collective-04be76258b34.herokuapp.com', '8000-lrchnnng-craftcollectiv-ndbyce7prw1.ws-eu111.gitpod.io']
+ALLOWED_HOSTS = [
+    'craft-collective-04be76258b34.herokuapp.com',
+    '8000-lrchnnng-craftcollectiv-ndbyce7prw1.ws-eu111.gitpod.io'
+    ]
 
 # Application definition
 
@@ -35,8 +37,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    
-    #Other
+
+    # Other
     'crispy_forms',
     'storages',
 ]
@@ -68,7 +70,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -113,7 +116,7 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-else: 
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -127,16 +130,28 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'UserAttributeSimilarityValidator',
+            )
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'MinimumLengthValidator',
+            )
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'CommonPasswordValidator',
+        )
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'NumericPasswordValidator',
+        )
     },
 ]
 
