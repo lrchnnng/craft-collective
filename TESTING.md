@@ -3,13 +3,21 @@
 # Testing <!-- omit from toc -->
 - [Automated vs Manual Testing](#automated-vs-manual-testing)
 - [Manual Testing](#manual-testing)
+    - [Responsivity Testing](#responsivity-testing)
+    - [Page Testing](#page-testing)
+    - [User Story Testing](#user-story-testing)
 - [Automated Testing](#automated-testing)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [Wave Accessibility Evaluation](#wave-accessibility-evaluation)
+    - [Python Testing](#python-testing)
+    - [Lighthouse Testing](#lighthouse-testing)
 - [Known bugs and fixes](#known-bugs-and-fixes)
 
 ## Automated vs Manual Testing
 
 ## Manual Testing
-### Responsivity
+### Responsivity Testing
 |Responsivity | Mobile S (320px)| Mobile L (425px)| Tablet (768px) | Desktop (1024px)|
 |---|:---:|:---:|:---:|:---:|
 |Responsive UI Components|✓|✓|✓|✓|
@@ -46,7 +54,10 @@
 |Toasts Testing|Yes/No|
 |---|:---:|
 |`Alert` Toast appears when editing a product|✓|
+|`Alert` Toast appears when prompting email verification when user signs up|✓|
 |`Success` Toast appears when signed out|✓|
+|`Success` Toast appears when email address is confirmed|✓|
+|`Success` Toast appears when user successfully signs into their account`|
 
 |Index Page Testing|Yes/No|
 |---|:---:|
@@ -56,6 +67,12 @@
 
 |Login Testing|Yes/No|
 |---|:---:|
+|Fonts have loaded|✓|
+|Form validation - Username/Email is required|✓|
+|Form validation - Password is required|✓|
+|Before form `sign up` link redirects user to Sign Up page|✓|
+|`Return Home` button redirects user back to index page|✓|
+|`Sign In` button logs user into their account, redirects to user Index page and triggers a `Success` toast|✓|
 
 |Sign Up Testing|Yes/No|
 |---|:---:|
@@ -66,6 +83,7 @@
 |Form validation - Password is required|✓|
 |Form validation - Password confirmation is required|✓|
 |`Sign Up` button is submits form and sends an email confirming sign up|✓|
+|`Sign Up` button redirects user to Verify Your Address page and triggers an alert toast|✓|
 |Under the form, `sign in` link redirects user to sign in page|✓|
 
 
@@ -159,7 +177,7 @@
 |Site User|Easily register for an account|Have personal account and be able to view my profile|Users can register for an account on the register page|![Register Page](assets/testing-img/signup.png)|
 |Site User|Easily login or logout|Access my personal account information|User can log in and log out of their account through the nav bar|![Nav Bar - Logged In](assets/testing-img/nav-account-logged-in-admin.png) ![Nav Bar - Logged Out](assets/testing-img/nav-account-logged-out.png) ![Logout Page](assets/testing-img/signout.png)|
 |Site User|Easily recover my password in case I forget it|Recover access to my account|If the user has forgotten their password they can follow a link from the login page to the password reset page. Once they fill in the login form they will recieve an email with a link to reset their password|![Login Page](assets/testing-img/signin.png) ![Password Reset Page](assets/testing-img/password-reset.png) ![Password Reset Message](assets/testing-img/password-reset-message.png) ![Password Reset - Email](assets/testing-img/password-reset-email.png)|
-|Site User|Receive an email confirmation after registering|Verify that my account registration was successful|Explain|![Desc](link)|
+|Site User|Receive an email confirmation after registering|Verify that my account registration was successful|When user registers for an account an email is sent asking for them to confirm registration by following a link|![Register - Email](assets/testing-img/register-email.png)|
 |Site User|Have a personalised user profile|View personal order history and order confirmations, and save my payment information|Users have a personal profile page accessed through the nav bar account dropdown, This displays their default delivery information allowing them to save and update their information as well as showing any previous purchases|![Nav Bar - Logged In](assets/testing-img/nav-account-logged-in-admin.png) ![Profile Page](assets/testing-img/profile-page.png)|
 
 #### Sorting and Searching
@@ -259,3 +277,7 @@
         - **Outcome:** Products still not appearing on the page
     - **Fix Attempt:** On the deployed site I logged into the Django admin panel to see if there was an issue with the category name. 
         - **Outcome:** Friendly name and Name were mixed up, fixed the typo and the products are now appearing in the category page
+
+
+---
+[Back To Top](#testing)
