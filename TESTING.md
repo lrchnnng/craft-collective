@@ -58,7 +58,21 @@
 |`Success Toast` appears when signed out|✓|
 |`Success Toast` appears when email address is confirmed|✓|
 |`Success Toast` appears when user successfully signs into their account`|
-`Success Toast` appears when a product is deleted|
+|`Success Toast` appears when a product is deleted|✓|
+|`Success Toast` appears when user add a product to their bag|✓|
+
+|Success Toast Testing|Yes/No|
+|---|:---:|
+|Fonts and Image have loaded|✓|
+|Correct product name is displayed in success message|✓|
+|Total quantity of products in shopping bag is displayed|✓|
+|Correct product image is displayed|✓|
+|Correct product name is displayed next to product image|✓|
+|If the product has a size, size of product is displayed and accurate|✓|
+|Product quantity is correct and displayed|✓|
+|Shopping bag total is correct and displayed|✓|
+|Delivery message is shown if shopping bag is below free delivery threshold and calculated accurately|✓|
+|`Go to Shopping Bag` button redirects user to Shopping Bag page|✓|
 
 |Index Page Testing|Yes/No|
 |---|:---:|
@@ -90,6 +104,7 @@
 |Products Page Testing|Yes/No|
 |---|:---:|
 |Fonts and images have loaded|✓|
+|Product count is accurate to amount of products on the page|✓|
 |`Sort by...` dropdown functions as expected|✓|
 |`Sort by...` - Price (low to high) sorts products from lowest price to highest|✓|
 |`Sort by...` - Price (high to low) sorts products from highest price to lowest|✓|
@@ -97,6 +112,9 @@
 |`Sort by...` - Name (Z-A) sorts products in reverse alphabetical order|✓|
 |`Sort by...` - Category (A-Z) sorts product categories in alphabetical order|✓|
 |`Sort by...` - Category (Z-A) sorts product categories in reverse alphabetical order|✓|
+|'Category' Product Page - Category name badge at the top of the page shows name of current category|✓|
+|'Category' Product Page - `Products Home` link redirects back to all products page|✓|
+|'Category' Product Page - Product count is accurate to amount of products on the page|✓|
 |Clicking image redirects user to product detail page|✓|
 |Clicking product name redirects user to product detail page|✓|
 |Non-Admin User - `Edit` and `Delete` buttons not visible|✓|
@@ -106,6 +124,20 @@
 
 |Product Detail Page Testing|Yes/No|
 |---|:---:|
+|Fonts and images have loaded|✓|
+|Category tag displays and is accurate to product|✓|
+|Quantity `-` button does not work if quantity is 1|✓|
+|Quantity `-` button decreased quantity by 1 if quantity is 2 or more|✓|
+|Quantity input field can be altered|✓|
+|If quantity input field is 0, user cannot add product to the bag|✓|
+|Quantity `+` button increases product by 1 if quantity is 98 or less|✓|
+|Quantity `+` button does not work if quantity is 99|✓|
+|Non-Admin User - `Edit` and `Delete` buttons not visible|✓|
+|Admin User - `Edit` and `Delete` buttons appear|✓|
+|Admin User - `Edit` button redirects user to Edit Product page|✓|
+|Admin User - `Delete` button deletes the product|✓|
+|`Back` button redirects user to products page|✓|
+|`Add to Bag` adds product to shopping bag and triggers Success toast|✓|
 
 |About Us Page Testing|Yes/No|
 |---|:---:|
