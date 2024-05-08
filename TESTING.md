@@ -41,10 +41,12 @@
 |In mobile view `search icon` triggers a drop down input field|✓|
 |`search bar` allows text input and searches products|✓|
 |`bag` total price updates when item is added to the bag and when clicked directs user to the bag page|✓|
+|When user is logged in as admin - `Product Management` links to `Add Product` page|✓|
 
 |Toasts Testing|Yes/No|
 |---|:---:|
 |`Alert` Toast appears when editing a product|✓|
+|`Success` Toast appears when signed out|✓|
 
 |Index Page Testing|Yes/No|
 |---|:---:|
@@ -57,6 +59,15 @@
 
 |Sign Up Testing|Yes/No|
 |---|:---:|
+|Fonts have loaded|✓|
+|Form validation - Email is required|✓|
+|Form validation - Email confirmation is required|✓|
+|Form validation - Username is required|✓|
+|Form validation - Password is required|✓|
+|Form validation - Password confirmation is required|✓|
+|`Sign Up` button is submits form and sends an email confirming sign up|✓|
+|Under the form, `sign in` link redirects user to sign in page|✓|
+
 
 |All Products Page Testing|Yes/No|
 |---|:---:|
