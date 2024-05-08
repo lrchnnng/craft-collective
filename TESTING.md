@@ -125,6 +125,7 @@
 |Product Detail Page Testing|Yes/No|
 |---|:---:|
 |Fonts and images have loaded|✓|
+|Clicking image opens a new tab with image preview|✓|
 |Category tag displays and is accurate to product|✓|
 |Quantity `-` button does not work if quantity is 1|✓|
 |Quantity `-` button decreased quantity by 1 if quantity is 2 or more|✓|

@@ -3,7 +3,7 @@
 
 [Link to Testing](https://github.com/lrchnnng/craft-collective/blob/main/TESTING.md)
 
-![Image of site on devices](link)
+![Image of site on devices](assets/readme-img/site-preview.png)
 
 [Link to live site](https://craft-collective-04be76258b34.herokuapp.com/)
 
