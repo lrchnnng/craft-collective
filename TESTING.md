@@ -53,11 +53,12 @@
 
 |Toasts Testing|Yes/No|
 |---|:---:|
-|`Alert` Toast appears when editing a product|✓|
-|`Alert` Toast appears when prompting email verification when user signs up|✓|
-|`Success` Toast appears when signed out|✓|
-|`Success` Toast appears when email address is confirmed|✓|
-|`Success` Toast appears when user successfully signs into their account`|
+|`Alert Toast` appears when editing a product|✓|
+|`Alert Toast` appears when prompting email verification when user signs up|✓|
+|`Success Toast` appears when signed out|✓|
+|`Success Toast` appears when email address is confirmed|✓|
+|`Success Toast` appears when user successfully signs into their account`|
+`Success Toast` appears when a product is deleted|
 
 |Index Page Testing|Yes/No|
 |---|:---:|
@@ -86,9 +87,22 @@
 |`Sign Up` button redirects user to Verify Your Address page and triggers an alert toast|✓|
 |Under the form, `sign in` link redirects user to sign in page|✓|
 
-
-|All Products Page Testing|Yes/No|
+|Products Page Testing|Yes/No|
 |---|:---:|
+|Fonts and images have loaded|✓|
+|`Sort by...` dropdown functions as expected|✓|
+|`Sort by...` - Price (low to high) sorts products from lowest price to highest|✓|
+|`Sort by...` - Price (high to low) sorts products from highest price to lowest|✓|
+|`Sort by...` - Name (A-Z) sorts proructs in alphabetical order|✓|
+|`Sort by...` - Name (Z-A) sorts products in reverse alphabetical order|✓|
+|`Sort by...` - Category (A-Z) sorts product categories in alphabetical order|✓|
+|`Sort by...` - Category (Z-A) sorts product categories in reverse alphabetical order|✓|
+|Clicking image redirects user to product detail page|✓|
+|Clicking product name redirects user to product detail page|✓|
+|Non-Admin User - `Edit` and `Delete` buttons not visible|✓|
+|Admin User - `Edit` and `Delete` buttons appear|✓|
+|Admin User - `Edit` button redirects user to Edit Product page|✓|
+|Admin User - `Delete` button deletes the product|✓|
 
 |Product Detail Page Testing|Yes/No|
 |---|:---:|

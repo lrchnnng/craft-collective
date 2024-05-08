@@ -89,7 +89,9 @@
 
                         <!-- Product Name -->
                         <div class="card-body p-0">
-                            <p class="mt-4 mb-2 text-dark text-uppercase">{{ product.name }}</p>
+                            <a href="{% url 'product_detail' product.id %}">
+                                <p class="mt-4 mb-2 text-dark text-uppercase">{{ product.name }}</p>
+                            </a>
                         </div>
                         <div class="card-footer bg-white pt-0 mt-0 border-0 text-left">
                             <div class="row">
