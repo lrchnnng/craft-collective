@@ -479,3 +479,7 @@ I ran all of my python files through Code Institute's Python Linter to check for
         - **Outcome:** Products still not appearing on the page
     - **Fix Attempt:** On the deployed site I logged into the Django admin panel to see if there was an issue with the category name. 
         - **Outcome:** Friendly name and Name were mixed up, fixed the typo and the products are now appearing in the category page
+    
+- Order confirmation emails not sending
+    - **Fix Attempt:** I logged into Stripe in order to see if I could find the issue within the webhook logs. A 301 HTTP status code indicated there may be an issue with the URL of my webhook endpoint. Checked my checkout url webhook path, webhook endpoint was missing a backslash('/') at the end of the url.
+        - **Outcome:** Email has successfully sent

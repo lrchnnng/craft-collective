@@ -7,6 +7,11 @@
 
 [Link to live site](https://craft-collective-04be76258b34.herokuapp.com/)
 
+In order to make an example purchase a specific card number is required:
+|Card Number|Date|CVC|Postal Code|
+|---|---|---|---|
+|4242 4242 4242 4242|any date|any 3 numbers|any 5 numbers|
+
 # Table of Contents <!-- omit in toc -->
 - [1. Website Information](#1-website-information)
 - [2. UX](#2-ux)
