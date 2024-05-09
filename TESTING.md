@@ -318,7 +318,7 @@
 |Shopper|Easily enter payment information|Check out quickly and with no hassles|At the checkout page there is a single payment input field making payment easy and fast. If the user has an account and they have already entered their delivery details, then their delivery information will be prefilled within the checkout form|![Checkout Page](assets/testing-img/checkout-page.png)|
 |Shopper|Feel my personal and payment information is safe and secure|Confidently provide the needed information to make a purchase|The payment page is a https page making the user's payment and personal information secure|![Secure URL](assets/testing-img/secure-url.png)|
 |Shopper|View an order confirmation after checkout|Verify that I haven't make any mistakes|Upon successful completion of an order the user will be redirected to the order confirmation page with their order details. The user can also access previous order confirmation pages through their personal profile page and clicking the order number|![Order confirmation](assets/testing-img/order-confirmation.png) ![Profile Page](assets/testing-img/profile-page.png)|
-|Shopper|Receive an email confirmation after checkout|Keep the confirmation of what I have purchased for my records|Once the user has successfully completed their purchase, they will receive an confirmation email outlining their order details|![Desc](link)|
+|Shopper|Receive an email confirmation after checkout|Keep the confirmation of what I have purchased for my records|Once the user has successfully completed their purchase, they will receive an confirmation email outlining their order details|![Order Confirmation Email](assets/testing-img/order-confirmation-email.png)|
 
 #### Admin and Management
 |User|I want to...|In order to...|Explaination|Image|
