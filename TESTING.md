@@ -370,12 +370,14 @@
 ### CSS Validation
 |Source|Y/N|
 |---|:---:|
-|base.css||
-|checkout.css||
-|profile.css||
+|base.css|✓|
+|checkout.css|✓|
+|profile.css|✓|
 
 ### Wave Accessibility Evaluation
-|Index|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Page|Test|Image|Issue|Fix|
+|---|---|---|---|---|
+|Index|Test 1|![Desc](link)|2 x Missing form labels, 4 x empty buttons||
 |About Us|Test 1|![Desc](link)|Issue 1 - |Fix 1|
 |FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
 |Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
