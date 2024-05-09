@@ -57,9 +57,12 @@
 |`Alert Toast` appears when prompting email verification when user signs up|✓|
 |`Success Toast` appears when signed out|✓|
 |`Success Toast` appears when email address is confirmed|✓|
-|`Success Toast` appears when user successfully signs into their account`|
+|`Success Toast` appears when user successfully signs into their account|
+|`Success Toast` appears when user changes password successfully|✓|
 |`Success Toast` appears when a product is deleted|✓|
 |`Success Toast` appears when user add a product to their bag|✓|
+|`Success Toast` appears when user updates quantity in their bag|✓|
+|`Success Toast` appears when user removes product from their bag|✓|
 
 |Success Toast Testing|Yes/No|
 |---|:---:|
@@ -147,15 +150,86 @@
 
 |FAQ Page Testing|Yes/No|
 |---|:---:|
+|Fonts have fully loaded|✓|
+|All accordian components work as expected|✓|
+|`Keep Shopping` button redirects user to products page|✓|
 
 |Shopping Bag Testing|Yes/No|
 |---|:---:|
+|Fonts have fully loaded|✓|
+|Product image has loaded|✓|
+|Product name is accurate|✓|
+|If product item has a size, user's selected size is displayed|✓|
+|SKU displays correctly|✓|
+|Product price is accurate|✓|
+|Quantity `-` button does not work if quantity is 1|✓|
+|Quantity `-` button decreased quantity by 1 if quantity is 2 or more|✓|
+|Quantity input field can be altered|✓|
+|If quantity input field is 0, user cannot add product to the bag|✓|
+|Quantity `+` button increases product by 1 if quantity is 98 or less|✓|
+|Quantity `+` button does not work if quantity is 99|✓|
+|Subtotal is calculated accurately|✓|
+|`Update` button updates the quantity and subtotal|✓|
+|When quantity is updated success toast is triggered|✓|
+|`Remove` button removes product from the bag|✓|
+|Bag total displays correctly|✓|
+|Delivery displays correctly|✓|
+|Grand total displays correctly|✓|
+|If the shopping bag is below the free delivery threshold, free delivery message appears|✓|
+|Free Delivery message calculates correctly|✓|
+|`Keep Shopping` button redirects user to product page|✓|
+|`Secure Checkout` button redirects user to checkout page|✓|
+|If the shopping bag is empty a message notifies user|✓|
+|If the shopping bag is empty `Keep Shopping` button redirects user to product page|✓|
 
 |Checkout Page Testing|Yes/No|
 |---|:---:|
+|Fonts have fully loaded|✓|
+|Product image has loaded|✓|
+|Product name is accurate|✓|
+|If product item has a size, user's selected size is displayed|✓|
+|Product quantity is displayed correctly|✓|
+|Subtotal displays correctly|✓|
+|Order total displays correctly|✓|
+|Delivery displays correctly|✓|
+|Grand total displays correctly|✓|
+|`Full Name` field is required|✓|
+|`Email Address` field is required|✓|
+|`Phone Number` field is required|✓|
+|`Street Address 1` field is required|✓|
+|`Street Address 2` field is not required|✓|
+|`Town or City` field is required|✓|
+|`County, State or Locality` field is not required|✓|
+|`Postal Code` field is not required|✓|
+|`Country` field is required|✓|
+|Select option saves user delivery information to their profile|✓|
+|Payment field works as expected|✓|
+|`Adjust Bag` button redirects user back to shopping bag page|✓|
+|`Complete Order` button sends payment to Stripe and completes order|✓|
+|Information message appears below buttons warning users that the site is for educational purposes only|✓|
+|Completing order triggers toast success and loading animation|✓|
+|Completing order redirects user to checkout success page|✓|
+
+|Checkout Success Page Testing|Yes/No|
+|---|:---:|
+|Fonts have fully loaded|✓|
+|Correct email is displayed in confirmation message|✓|
+|Correct order info is displayed|✓|
+|Correct delivery details are displayed|✓|
+|Correct billing info is displayed|✓|
+|`Keep Shopping` button redirects user to products page|✓|
 
 |Profile Page Testing|Yes/No|
 |---|:---:|
+|Fonts have fully loaded|✓|
+|Form loads previously saved user data|✓|
+|`Update Information` button saves updated data to user's account|✓|
+|Order history appears as expected|✓|
+|Order number links user to orders confirmation message|✓|
+|Order date matches order confirmation|✓|
+|Order items matches order confirmation|✓|
+|Order total matches order confirmation|✓|
+|`Keep Shopping` redirects user back to product page|✓|
 
 |Product Management Page Testing|Yes/No|
 |---|:---:|
