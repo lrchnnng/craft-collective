@@ -3,50 +3,50 @@
 
         <!-- Index -->
         <li class="nav-item ">
-            <a class="nav-link text-dark" href="{% url 'home' %}">home.</a>
+            <a class="nav-link text-dark" href="{% url 'home' %}" aria-label="home">home.</a>
         </li>
 
         <!-- Who are we -->
         <li class="nav-item dropdown">
             <a class="nav-link text-dark" aria-current="page" role="button" href="#" data-toggle="dropdown"
-                aria-expanded="false">who are we.</a>
+                aria-expanded="false" aria-label="who we are dropdown menu">who are we.</a>
             <ul class="dropdown-menu border border-4 rounded">
                 <li class="dropdown-item">
-                    <a class="text-dark" href="{% url 'about_us' %}">about us.</a>
+                    <a class="text-dark" href="{% url 'about_us' %}" aria-label="about us">about us.</a>
                 </li>
                 <li class="dropdown-item">
-                    <a class="text-dark" href="{% url 'faq' %}">FAQ.</a>
+                    <a class="text-dark" href="{% url 'faq' %}" aria-label="FAQ">FAQ.</a>
                 </li>
             </ul>
         </li>
 
         <!-- All Products -->
         <li class="nav-item">
-            <a class="nav-link text-dark" href="{% url 'products' %}">all products.</a>
+            <a class="nav-link text-dark" href="{% url 'products' %}" aria-label="all products">all products.</a>
         </li>
 
         <!-- Bracelets -->
         <li class="nav-item">
             <a class="nav-link text-dark" 
-               href="{% url 'products' %}?category=bracelets">bracelets.</a>
+               href="{% url 'products' %}?category=bracelets" aria-label="bracelets">bracelets.</a>
         </li>
 
         <!-- Earrings -->
         <li class="nav-item">
             <a class="nav-link text-dark" 
-               href="{% url 'products' %}?category=earrings">earrings.</a>
+               href="{% url 'products' %}?category=earrings" aria-label="earrings">earrings.</a>
         </li>
 
         <!-- Necklaces -->
         <li class="nav-item">
             <a class="nav-link text-dark" 
-               href="{% url 'products' %}?category=necklaces">necklaces.</a>
+               href="{% url 'products' %}?category=necklaces" aria-label="necklaces">necklaces.</a>
         </li>
 
         <!-- Rings -->
         <li class="nav-item ">
             <a class="nav-link text-dark" 
-               href="{% url 'products' %}?category=rings">rings.</a>
+               href="{% url 'products' %}?category=rings" aria-label="rings">rings.</a>
         </li>
     </ul>
 </div>

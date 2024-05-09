@@ -3,7 +3,7 @@
     <li class="list-inline-item">
         <div class="dropdown-center d-lg-none">
             <button class="text-dark border-0 bg-white" type="button" id="mobile-search" data-toggle="dropdown"
-                aria-expanded="false">
+                aria-expanded="false" aria-label="search dropdown button">
                 <div class="text-center">
                     <i class="fas fa-search fa-lg"></i> 
                 </div>
@@ -11,9 +11,11 @@
             <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
                 <form class="form" method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" 
+                               placeholder="Search our site" aria-label="search input field">
                         <div class="input-group-append">
-                            <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit"
+                                    aria-label="search button">
                                 <i class="fas fa-search fa-lg"></i>
                             </button>
                         </div>
@@ -27,7 +29,7 @@
     <li class="list-inline-item">
         <div class="dropdown-center d-lg-none">
             <button class="btn text-dark text-align-right" type="button" id="user-options" data-toggle="dropdown"
-                aria-expanded="false">
+                aria-expanded="false" aria-label="my account dropdown">
                 <div class="text-center">
                     <i class="fas fa-user fa-lg"></i>
                 </div>
@@ -49,7 +51,8 @@
 
     <!-- Shopping Bag -->
     <li class="list-inline-item">
-        <a class=" d-lg-none {% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %}" href="{% url 'view_bag' %}">
+        <a class="d-lg-none {% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %}" href="{% url 'view_bag' %}"
+            aria-label="grand total and link to shopping bag">
             <p class="my-0 text-dark">
                 <i class="fas fa-shopping-basket"></i>
                 {% if grand_total %}

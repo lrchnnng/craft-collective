@@ -10,8 +10,8 @@
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
     - [Wave Accessibility Evaluation](#wave-accessibility-evaluation)
-    - [Python Testing](#python-testing)
     - [Lighthouse Testing](#lighthouse-testing)
+    - [Python Testing](#python-testing)
 - [Known bugs and fixes](#known-bugs-and-fixes)
 
 ## Automated vs Manual Testing
@@ -377,7 +377,22 @@
 ### Wave Accessibility Evaluation
 |Page|Test|Image|Issue|Fix|
 |---|---|---|---|---|
-|Index|Test 1|![Desc](link)|2 x Missing form labels, 4 x empty buttons||
+|Index|Test 1|![Desc](link)|2 x Missing form labels, 4 x empty buttons|Added aria labels to empty buttons and missing form labes as these areas should not include text|
+|About Us|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Sign Up|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Products|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Product Detail|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Shopping Bag|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Checkout|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|User - Profile|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Admin - Add/Edit Product|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
+### Lighthouse Testing
+|Page|Test No.|Screenshot|Issues|Fix|
+|---|---|---|---|---|
+|Index|Test 1|![Desc](link)|Issue 1 - |Fix 1|
 |About Us|Test 1|![Desc](link)|Issue 1 - |Fix 1|
 |FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
 |Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
@@ -447,21 +462,6 @@ I ran all of my python files through Code Institute's Python Linter to check for
 |models.py|![Linter Result - models.py](assets/testing-img/pylinter-profiles-models.png)|
 |urls.py|![Linter Result - urls.py](assets/testing-img/pylinter-profiles-urls.png)|
 |views.py|![Linter Result - views.py](assets/testing-img/pylinter-profiles-views.png)|
-
-### Lighthouse Testing
-|Page|Test No.|Screenshot|Issues|Fix|
-|---|---|---|---|---|
-|Index|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|About Us|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Sign Up|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Products|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Product Detail|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Shopping Bag|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Checkout|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|User - Profile|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Admin - Add/Edit Product|Test 1|![Desc](link)|Issue 1 - |Fix 1|
 
 ## Known Bugs and Fixes
 - Email confirmation not loading in terminal

@@ -59,7 +59,8 @@
             <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="search...">
             <div class="input-group-append">
               <!-- Search Bar -->
-              <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+              <button class="form-control form-control btn btn-black border border-black rounded-0" 
+                      type="submit" aria-label="search button">
                 <i class="fas fa-search fa-lg"></i>
               </button>
             </div>
@@ -74,7 +75,7 @@
           <li class="list-inline-item">
             <div class="dropdown-center">
               <button class="nav-link btn text-dark nav-link" type="button" id="user-options" data-toggle="dropdown"
-                aria-expanded="false">
+                aria-expanded="false" aria-label="my account">
                 <div class="text-dark">
                   <p>my account.</p>
                 </div>
@@ -95,7 +96,7 @@
           </li>
           <!-- Shopping Bag -->
           <li class="list-inline-item">
-            <a class=" nav-link{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}"
+            <a class="nav-link{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}"
               href="{% url 'view_bag' %}">
               <div class="text-center">
                 <p class="text-dark ">
