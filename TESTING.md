@@ -377,17 +377,29 @@
 ### Wave Accessibility Evaluation
 |Page|Test|Image|Issue|Fix|
 |---|---|---|---|---|
-|Index|Test 1|![Desc](link)|2 x Missing form labels, 4 x empty buttons|Added aria labels to empty buttons and missing form labes as these areas should not include text|
-|About Us|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+|Index|Test 1|![Wave - Index Test 1](assets/testing-img/wave-index-1.png)|**Errors:** 1 x Missing form label|Added aria label to search bar input field|
+|Index|Test 2|![]()|ISSUE|FIX|
+|About Us|Test 1|![Wave - About Us Test 1](assets/testing-img/wave-aboutus-1.png)|**Errors:** 1 x Missing form label, **Alerts:** 1 x Missing first level heading||
+|About Us|Test 2|![Desc](link)|Issue 1 - |Fix 1|
+
 |FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
 |Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
 |Sign Up|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
 |Products|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
 |Product Detail|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
 |Shopping Bag|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
 |Checkout|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
 |User - Profile|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Admin - Add/Edit Product|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+
+|Admin - Add/Edit Product|Test 1|![Desc](link)|
+Issue 1 - |Fix 1|
 
 ### Lighthouse Testing
 |Page|Test No.|Screenshot|Issues|Fix|
