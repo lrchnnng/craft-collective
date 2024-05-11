@@ -394,19 +394,18 @@
 |Shopping Bag|Test 2|![Wave - Shopping Bag Test 2](assets/testing-img/wave-bag-2.png)|No Errors|No Fixes|
 
 ### Lighthouse Testing
-|Page|Test No.|Screenshot|Issues|Fix|
-|---|---|---|---|---|
-|Index|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|About Us|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Sign Up|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Products|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Product Detail|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Shopping Bag|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Checkout|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|User - Profile|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-|Admin - Add/Edit Product|Test 1|![Desc](link)|Issue 1 - |Fix 1|
+I opted to use [PageSpeed Insights](https://pagespeed.web.dev/) instead of the browser devtool version of Lighthouse. PageSpeed uses the Lighthouse API in order to test webpages.
+
+|Page|Evidence|
+|---|---|
+|Index|![Lighthouse - Index](assets/testing-img/lighthouse-index.png)|
+|About Us|![Lighthouse - About Us](assets/testing-img/lighthouse-aboutus.png)|
+|FAQ|![Lighthouse - FAQ](assets/testing-img/lighthouse-faq.png)|
+|Login|![Lighthouse - Login](assets/testing-img/lighthouse-login.png)|
+|Sign Up|![Lighthouse - Register](assets/testing-img/lighthouse-register.png)|
+|Products|![Lighthouse - Products](assets/testing-img/lighthouse-products.png)|
+|Product Detail|![Lighthouse - Product Detail](assets/testing-img/lighthouse-productdetail.png)|
+|Shopping Bag|![Lighthouse - Shopping Bag](assets/testing-img/lighthouse-bag.png)|
 
 ### Python Testing
 I ran all of my python files through Code Institute's Python Linter to check for any semantic or stylistic problems. I also utilised the Flake8 extension in order to highlight any issues within my py files.
