@@ -343,14 +343,14 @@
 |password_reset_done.html|✓|
 |password_reset_from_key_done.html|✓|
 |password_reset_from_key.html|✓|
-|password_reset.html||
+|password_reset.html|✓|
 |password_set.html|✓|
 |signup_closed.html|✓|
 |signup.html|✓|
 |verification_sent.html|✓|
 |verified_email_required.html|✓|
 |main-nav.html|✓|
-|mobile-top-header.html||
+|mobile-top-header.html|✓|
 |toast_error.html|✓|
 |Ttoast_info.html|✓|
 |toast_success.html|✓|
@@ -378,28 +378,14 @@
 |Page|Test|Image|Issue|Fix|
 |---|---|---|---|---|
 |Index|Test 1|![Wave - Index Test 1](assets/testing-img/wave-index-1.png)|**Errors:** 1 x Missing form label|Added aria label to search bar input field|
-|Index|Test 2|![]()|ISSUE|FIX|
-|About Us|Test 1|![Wave - About Us Test 1](assets/testing-img/wave-aboutus-1.png)|**Errors:** 1 x Missing form label, **Alerts:** 1 x Missing first level heading||
-|About Us|Test 2|![Desc](link)|Issue 1 - |Fix 1|
-
-|FAQ|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-
-|Login|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-
-|Sign Up|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-
-|Products|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-
-|Product Detail|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-
-|Shopping Bag|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-
-|Checkout|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-
-|User - Profile|Test 1|![Desc](link)|Issue 1 - |Fix 1|
-
-|Admin - Add/Edit Product|Test 1|![Desc](link)|
-Issue 1 - |Fix 1|
+|Index|Test 2|![Wave - Index Test 1](assets/testing-img/wave-index-2.png)|No Issues|No Fixes|
+|About Us|Test 1|![Wave - About Us Test 1](assets/testing-img/wave-aboutus-1.png)|No Errors|No Fixes|
+|FAQ|Test 1|![Wave - FAQ Test 1](assets/testing-img/wave-faq-1.png)|**Errors:** Broken aria reference, **Alerts:** Missing first level heading|**Errors:** Changed aria-labelledby to aria-label on `Keep Shopping` button, **Alerts:** Changed H2 heading element to a H1 element|
+|Login|Test 1|![Wave - Sign In Test 1](assets/testing-img/wave-login-1.png)|**Errors:** Missing form labels, **Contrast Errors:** Very low contrast, **Alerts:** Missing first level heading|**Errors:** The missing form labels are within django's allauth and crispy form for the username/email and password fields. I have added an aria label to the form element in order to combat this as I cannot add them to the elements themselves, **Contrast Errors:** I changed the colours of the redirect links (sign up/forgotten password) to increase the contrast and added an underline to make them more obviously links, **Alerts:** I have changed the H2 header to a H1 header|
+|Sign Up|Test 1|![Desc](link)|**Errors:** Missing form labels, **Contrast Errors:** Very low contrast, **Alerts:** Missing first level header|**Errors:** I am unsure if it is possible to add aria labels to Django's crispy form elements so instead I have added an aria label to the entire form element and will ignore this error in the future,**Contrast Errors:** I changed the sign in link to a darker colour to increase contrast and underlined it in order to make it clearer it was a link, **Alerts:** Changed H2 header into a H1 header|
+|Products|Test 1|![Wave - Products Test 1](assets/testing-img/wave-products-1.png)|**Errors:** Empty link, **Alerts:** Select missing label, missing first level heading, redundant link|**Errors:** Empty anchor element used as a back to top button, button works as intended. Added an aria label but did not change the element otherwise, **Alerts:** Added an aria labels to select box and select option elements but did not change the element otherwise. Changed H2 header to H1 element. I wrapped both image and name in the same link in order to remove the redundant link|
+|Product Detail|Test 1|![Wave - Product Detail Test 1](assets/testing-img/wave-productdetail-1.png)|**Errors:** Missing form label, Empty button, **Alerts:** Orphaned form label, missing first level heading, possible heading|**Errors:** Added aria label to quantity input element and quantity increase button to fix both errors, **Alerts:** Linked quantity label to quantity input field, I have chosen not to add a first level heading as it doesn't fit with the styling of my page, I have also chosen not to change the p element to a heading element as it doesn't fit with the styling|
+|Shopping Bag|Test 1|![Wave - Shopping Bag Test 1](assets/testing-img/wave-bag-1.png)|**Errors:** Broken aria reference, **Alerts:** Missing first level heading|**Errors:** Changed aria-labelledby to aria-label on `Keep Shopping` button, **Alerts:** Changed H2 header into a H1 header|
 
 ### Lighthouse Testing
 |Page|Test No.|Screenshot|Issues|Fix|

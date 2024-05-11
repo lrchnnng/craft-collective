@@ -7,13 +7,14 @@
 {% block inner_content %}
 <hr>
 <!-- Page Header -->
-<h2 class="logo-font mt-4 text-center">{% trans "Sign Up" %}</h2>
+<h1 class="logo-font mt-4 text-center">{% trans "Sign Up" %}</h1>
 <hr>
 
 <div class="container text-center">
 
   <!-- Sign Up Form -->
-  <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}" 
+        aria-label="sign up form">
     {% csrf_token %}
     {{ form|crispy }}
     {% if redirect_field_value %}
@@ -24,7 +25,7 @@
     <button type="submit" class="col-12 col-md-6 text-uppercase" aria-label="Sign up">{% trans "Sign Up" %}</button>
   </form>
   <!-- Sign in link -->
-  <p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" aria-label="already have an account? sign in">sign in</a>.{% endblocktrans %}</p>  
+  <p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="text-dark" aria-label="already have an account? sign in"><u>sign in</u></a>.{% endblocktrans %}</p>  
 </div>
 
 {% endblock %}
