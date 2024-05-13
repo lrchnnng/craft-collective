@@ -1,8 +1,6 @@
 # craft collective. <!-- omit in toc -->
 **A fictional e-commerce jewellery store using Django and Stripe** 
 
-[Link to Testing](https://github.com/lrchnnng/craft-collective/blob/main/TESTING.md)
-
 ![Image of site on devices](assets/readme-img/site-preview.png)
 
 [Link to live site](https://craft-collective-04be76258b34.herokuapp.com/)
@@ -16,18 +14,29 @@ In order to make an example purchase a specific card number is required:
 - [1. Website Information](#1-website-information)
 - [2. UX](#2-ux)
   - [2.1 Strategy](#21-strategy)
+    - [2.1.1 Target User](#211-target-user)
+    - [2.2.2 User Goals](#222-user-goals)
+    - [2.2.3 Website/Business Goals](#223-websitebusiness-goals)
   - [2.2 Scope](#22-scope)
+    - [2.2.1 Features](#221-features)
+    - [2.2.2 Error Handling](#222-error-handling)
+    - [2.2.3 Defensive Programming](#223-defensive-programming)
+    - [2.2.4 Future Goals](#224-future-goals )
   - [2.3 Structure](#23-structure)
+    - [2.3.1 Database Design](#231-database-design)
   - [2.4 Skeleton](#24-skeleton)
   - [2.5 Surface](#25-surface)
-- [3. Database Design](#3-database-design)
-- [4. Error Handling](#4-error-handling)
-- [5. Technologies Used](#5-technologies-used)
-- [6. Defensive Programming](#6-defensive-programming)
-- [7. Future Goals](#7-future-goals)
-- [8. Testing](#8-testing)
-- [9. Deployment](#9-deployment)
-- [10. Credits and Acknowledgments](#10-credits-and-acknowledgments)
+- [3. Technologies Used](#3-technologies-used)
+  - [3.1 Languages](#31-languages)
+  - [3.2 Frameworks](#32-frameworks)
+  - [3.3 Libraries & Packages](#33-libraries--packages)
+  - [3.4 Database](#34-database)
+  - [3.5 Design](#35-design)
+  - [3.6 Other](#36-other)
+  - [3.7 Stripe](#37-stripe)
+- [4. Testing](#4-testing)
+- [5. Deployment](#5-deployment)
+- [6. Credits and Acknowledgments](#6-credits-and-acknowledgments)
 
 
 ## 1. Website Information
@@ -47,7 +56,7 @@ In order to make an example purchase a specific card number is required:
 
 ## 2. UX/UI Design
 ### 2.1 Strategy
-#### Target User
+#### 2.1.1 Target User
 * **Age:** Likely 18 - 40 years old, with a possible skew towards females
 * **Location:** Primarily based on the UK but could also target international customers interested in British handcrafted jewellery. 
 * **Interests:** Loves unique, handcrafted jewellery with a story. 
@@ -55,7 +64,7 @@ In order to make an example purchase a specific card number is required:
 * **Values:** Sustainability, ethi+cal sourcing, and supporting small businesses.
 * **Personality:** Creative, expressive, enjoys standing out from the crowd
 
-#### User Goals
+#### 2.2.2 User Goals
 **Shopper**
 1. I want to be able to view a list of products to purchase.
 2. I want to be able to view products from a specific category.
@@ -80,16 +89,14 @@ In order to make an example purchase a specific card number is required:
 4. I want to be able to receive an email confirmation after registering.
 5. I want to have a personalised user profile.
 
+#### 2.2.3 Website/Business Goals
 **Store Owner**
 1. I want to be able to add a product.
 2. I want to be able to edit/update a product.
 3. I want to be able to delete products.
 
-#### Website/Business Goals
-
 ### 2.2 Scope
-#### Features
-
+#### 2.2.1 Features
 |Index/Home|A simple landing page navigating users to begin shopping|
 |---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
@@ -201,43 +208,26 @@ In order to make an example purchase a specific card number is required:
 |`Cancel`|A button allowing the user to cancel the adding or editing of the product. This button redirects the user back to the products page|
 |`Add/Update Product`|Depening on the page, this button submits the form and either adds or updates the product information|
 
-#### Error Handling
+#### 2.2.2 Error Handling
 `get_object_or_404` - Using this function within my Python code, in the event that an object within my database cannot be found a 404 error code is created.
 
 
-#### Defensive Programming
+#### 2.2.3 Defensive Programming
 Jinja templating 
 
 python decorators
 
 
-#### Future Goals
-Changing database to include metal type 
-Changing database to many to many field in order to add more categories 
+#### 2.2.4 Future Goals
+In future iterations of the web app I would like to expand the database model, this would include adding an additional option to select a metal type. I’d implement this in a similar way to the size options, users would be able to select a metal type from a dropdown select box.
 
-
+I’d also alter the categories model by creating a many to many field allowing for products to have multiple categories at the same time. An example would be a ring would be able to be ‘Gold’, ‘Hoops’ and ‘Earrings. This would mean that users could narrow down their search further. 
 
 ### 2.3 Structure
-#### Database Design
+#### 2.3.1 Database Design
 I opted to use a relational database as it allows for easier and more structured connections between related data. In order to visualise this my site data I used [Lucid Chart](https://www.lucidchart.com/) to design my database tables and how they would relate to one another.
 
 ![Database Schema](assets/readme-img/database-design.jpg)
-
-### 2.4 Skeleton
-#### Wireframes
-
-**Mobile**
-![Mobile Wireframes of main pages](assets/readme-img/mobile-wireframes.jpg)
-
-**Desktop**
-![Desktop wireframes of main pages](assets/readme-img/desktop-wireframes.jpg)
-
-### 2.5 Surface
-| Type | Image | Description|
-|:---:|---|---|
-|Typography|||
-|Colours|![screenshot of colour palette](assets/readme-img/colours.jpg)|I chose to use a simple white, black and grey colour scheme in order to keep accessibility scores high. Given the majority of the site is fairly image heavy I also didn't want the background/text to over power the products. By keeping the colour palette clean, the products are kept the main focus of the site.|
-|Images|||
 
 **Category**
 
@@ -249,20 +239,35 @@ I opted to use a relational database as it allows for easier and more structured
 
 **Order Line Item**
 
-## 4. Technologies Used
-### Languages
+### 2.4 Skeleton
+#### 2.4.1 Wireframes
+**Mobile**
+![Mobile Wireframes of main pages](assets/readme-img/mobile-wireframes.jpg)
+
+**Desktop**
+![Desktop wireframes of main pages](assets/readme-img/desktop-wireframes.jpg)
+
+### 2.5 Surface
+| Type | Image | Description|
+|:---:|---|---|
+|Typography|![screenshot of google font](assets/readme-img/typography.png)|I chose a simple, rounded font from google fonts called 'Montserrat'. This gives a clean sophisticated look across the whole website and is also easy to read. It translates well from main text to bolder heading and by using it throughout, it maintains a level of cohesion.|
+|Colours|![screenshot of colour palette](assets/readme-img/colours.jpg)|I chose to use a simple white, black and grey colour scheme in order to keep accessibility scores high. Given the majority of the site is fairly image heavy I also didn't want the background/text to over power the products. By keeping the colour palette clean, the products are kept the main focus of the site.|
+|Images|![screenshot of astrid & miyu](assets/readme-img/astrid-miyu.png)|In order to create an example of how the site would look with product images I chose to take images from a pre-existing jewellery business [Astrid & Miyu](https://www.astridandmiyu.com/). I wanted to use bright imagery as a visual explanation as to why I felt keeping the site clean and light would showcase the products. I also used Google Images for my 'About Us' page.|
+
+## 3. Technologies Used
+### 3.1 Languages
 - [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [JavaScript](https://www.javascript.com/)
 - [Markdown](https://www.markdownguide.org/)
 - [Python](https://www.python.org/)
 
-### Frameworks
+### 3.2 Frameworks
 - [Bootstrap](https://getbootstrap.com/) - A framework that uses classes and JS to help build responsive, mobile first sites
 
 - [Django](https://www.djangoproject.com/) - A Python web framework that aids in quick development of apps as well as clean design.
 
-### Libraries & Packages
+### 3.3 Libraries & Packages
 - [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
 
 - [botocore](https://pypi.org/project/botocore/) - The foundation for the AWS CLI and boto3
@@ -289,19 +294,19 @@ I opted to use a relational database as it allows for easier and more structured
 
 - [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - A templating engine similar to Python syntax
 
-### Database
+### 3.4 Database
 - [Code Institute DB Maker](https://dbs.ci-dbs.net/) - Used to create database for deployment
 
 - sqlite3 - Used as a database during development
 
-### Design
+### 3.5 Design
 - [Affinity](https://affinity.serif.com/en-gb/designer/) - A design tool used to resize and export images and change file types
 
 - [Figma](https://www.figma.com/) - A design and prototyping tool used for UI/UX Design
 
 - [Google Fonts](https://fonts.google.com/) - a free, open-source collection of web fonts provided by Google 
 
-### Other
+### 3.6 Other
 
 - [Git](https://git-scm.com/) - Version control
 
@@ -311,7 +316,7 @@ I opted to use a relational database as it allows for easier and more structured
 
 - [pip](https://pypi.org/project/pip/) - Used for installing packages in the terminal
 
-### Stripe
+### 3.7 Stripe
 [Stripe](https://stripe.com/gb) is used to implement the payment system.
 
 Stripe is in developer mode which allows for us to process test payments to check how the site functions in different situations
@@ -324,6 +329,8 @@ Stripe is in developer mode which allows for us to process test payments to chec
 
 
 ## 7. Testing
+To view testing documentation: 
+[Link to Testing](https://github.com/lrchnnng/craft-collective/blob/main/TESTING.md)
 
 ## 8. Deployment
 **Creating the database**
@@ -359,22 +366,23 @@ Since I already have an account with Heroku I was able to do the majority of the
 
 
 **Browser Deployment**
-
 I chose to connect my app to GitHub in order to manually deploy the app once I had finished with development. 
 
 
 ## 9. Credits and Acknowledgments
 * [Affinity](https://affinity.serif.com/en-gb/designer/) - Used to resize images.
-* [Django](https://www.djangoproject.com/) - Used to create site.
-* [Code Institute DB Maker](https://dbs.ci-dbs.net/) - Used to create my database for deployment.
-* [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) - Used to style site.
-* [Figma](https://www.figma.com/) - Used to create wireframes.
-* [Google Fonts](https://fonts.google.com/) - Used for fonts across the site.
+* [Astrid & Miyu](https://www.astridandmiyu.com/) - Used for images of jewellery
+* [Django](https://www.djangoproject.com/) - Used to create site
+* [Code Institute DB Maker](https://dbs.ci-dbs.net/) - Used to create my database for deployment
+* [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - Used to check and fix python errors
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) - Used to style site
+* [Figma](https://www.figma.com/) - Used to create wireframes
+* [Google Fonts](https://fonts.google.com/) - Used for fonts across the site
 * [Heroku](https://www.heroku.com/home) - Used to deploy the site.
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used to create site structure.
-* [JavaScript](https://www.javascript.com/) - Used to add interactivity and animation.
-* [jQuery](https://jquery.com/) - Used to write JS.
-* [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - Used for templating.
-* [Lucid Chart](https://www.lucidchart.com/) - Used to create visual database schema.
-* [Markdown](https://www.markdownguide.org/) - Used to format README and TESTING.
-* [Python](https://www.python.org/) - Used for coding functions and classes.
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Used to create site structure
+* [JavaScript](https://www.javascript.com/) - Used to add interactivity and animation
+* [jQuery](https://jquery.com/) - Used to write JS
+* [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - Used for templating
+* [Lucid Chart](https://www.lucidchart.com/) - Used to create visual database schema
+* [Markdown](https://www.markdownguide.org/) - Used to format README and TESTING
+* [Python](https://www.python.org/) - Used for coding functions and classes

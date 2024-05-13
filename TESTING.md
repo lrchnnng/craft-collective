@@ -408,7 +408,7 @@ I opted to use [PageSpeed Insights](https://pagespeed.web.dev/) instead of the b
 |Shopping Bag|![Lighthouse - Shopping Bag](assets/testing-img/lighthouse-bag.png)|
 
 ### Python Testing
-I ran all of my python files through Code Institute's Python Linter to check for any semantic or stylistic problems. I also utilised the Flake8 extension in order to highlight any issues within my py files.
+I ran all of my python files through [Code Institute Python Linter](https://pep8ci.herokuapp.com/) to check for any semantic or stylistic problems. I also utilised the Flake8 extension in order to highlight any issues within my py files.
 
 |Main Files|Screenshot|
 |---|---|
