@@ -231,14 +231,17 @@ I opted to use a relational database as it allows for easier and more structured
 
 ![Database Schema](assets/readme-img/database-design.jpg)
 
-**Product & Categories**
-The category table in my database schema represents the the categories of products. When a product information is called the product category is represented by a foreign key, linking the two tables together. 
+**Category Table**
+The category table in my database schema represents the the categories of products, these include 'Rings', 'Necklaces' etc. Each category has a private key associated which ensure each category is unique and allows it to be linked to the products table using a foreign key. 
 
-**User Profile**
+**Product Table**
+The product table includes a detailed set of information about each product, the SKU number, name, price and image as well as the foreign key connecting to a specific category. This information allows for the searching and organisation of products in a variety of ways and allows the site to display everything needed.
 
-**Order**
+**User Profile Table**
+The user profile table includes information for each individual user, this includes things like phone number, address, postcode etc. When a user creates a new order their profile is linked to the order table using a foreign key.
 
-**Order Line Item**
+**Order Table**
+The order table combines information from both the products table and the user profile table. The information from the user profile table, using a foreign key, shows who placed the order and the products the user has chosen are linked using another foreign key. 
 
 ### 2.4 Skeleton
 #### 2.4.1 Wireframes
