@@ -61,7 +61,7 @@ In order to make an example purchase a specific card number is required:
 * **Location:** Primarily based on the UK but could also target international customers interested in British handcrafted jewellery. 
 * **Interests:** Loves unique, handcrafted jewellery with a story. 
 * **Goals:** Seeks jewellery that reflects their personality and individuality. Wants to avoid mass-produced products and trends as well as over-priced pieces. 
-* **Values:** Sustainability, ethi+cal sourcing, and supporting small businesses.
+* **Values:** Sustainability, ethical sourcing, and supporting small businesses.
 * **Personality:** Creative, expressive, enjoys standing out from the crowd
 
 #### 2.2.2 User Goals
@@ -188,7 +188,7 @@ In order to make an example purchase a specific card number is required:
 |---|---|
 |`Nav Bar`|A fully responsive navigation bar used to navigate the site, displays current shopping bag total and allows user to search for specific products|
 |`Page Header`|Used to identify the page|
-|`Accordian`|A series of accordian dropdowns, displaying a question and allowing users to view the answer when clicked|
+|`Accordion`|A series of accordion dropdowns, displaying a question and allowing users to view the answer when clicked|
 |`Keep Shopping`|A button directing the user to the product page|
 
 |User - Profile Page|A personalised page allowing users to update their delivery information and view previous orders|
@@ -206,17 +206,20 @@ In order to make an example purchase a specific card number is required:
 |`Subtitle`|Defines if the page is to add a new product or edit a currently existing product|
 |`Add Product Form` or `Edit Product Form`|If the user is adding a new product they are prompted to fill in an empty form in order to add a new product to the store. If the user is editing an existing product the same form will be preloaded with existing data about the selected product|
 |`Cancel`|A button allowing the user to cancel the adding or editing of the product. This button redirects the user back to the products page|
-|`Add/Update Product`|Depening on the page, this button submits the form and either adds or updates the product information|
+|`Add/Update Product`|Depending on the page, this button submits the form and either adds or updates the product information|
 
 #### 2.2.2 Error Handling
-`get_object_or_404` - Using this function within my Python code, in the event that an object within my database cannot be found a 404 error code is created.
+In order to handle any errors I have created both a 404 HTML code page that notifies the user the page they're looking for doesn't exist and provides a button to return back to the home page. I have also created a 500 HTML code page that informs the user of an internal server error and offers a button to redirect back to the home page.
+
+Within my python code I have also implemented a `get_object_or_404` function. In the event that an object (in this case a product) within my database either cannot be found or does not exist a 404 error code is created. Using this during development I am able to pinpoint where the issue might be coming from, in deployment this stops users from being able to purchase products that do not exist.
+
+I also have a used toast feature that pops up in the top right hand corner that provides a feedback loop for any actions the user makes during their interaction with the site. These toasts cover everything from when a user has successfully added an item, it also notifies users of any errors that they may encounter.
 
 
 #### 2.2.3 Defensive Programming
 Throughout the site I have implemented defensive programming in order to keep it safe. Using Jinja templating to checking if the user is a superuser I am able to block access to admin related pages, I also used it in order to check if the user was in session, determining which account options are available. If the user is not logged in they have the option to 'register' or 'Login', if the user is logged in they can view their profile or sign out.
 
 Within my Profile python code I have also used python auth decorators, specifically `login_required`. This means that users cannot access admin/user profiles unless they are logged in, it also stops users from accessing these pages by simply typing the url. If a user does not have the required permissions to access a page then an error toast will pop up notifying the user of the issue.
-
 
 #### 2.2.4 Future Goals
 In future iterations of the web app I would like to expand the database model, this would include adding an additional option to select a metal type. I’d implement this in a similar way to the size options, users would be able to select a metal type from a dropdown select box.
@@ -334,7 +337,7 @@ To view testing documentation:
 ## 8. Deployment
 **Creating the database**
 
-Due to ElephantSQL coming to the end of their life I decided to use Code Institutes Database Maker to create a database for this porject. During development I was using sqlite3 however this isn't usable within deployment.
+Due to ElephantSQL coming to the end of their life I decided to use Code Institutes Database Maker to create a database for this project. During development I was using sqlite3 however this isn't usable within deployment.
 
 **Heroku CLI**
 
@@ -344,7 +347,7 @@ Since I already have an account with Heroku I was able to do the majority of the
 
 2. `heroku create app-name` - You then create a new Heroku app, this name needs to be unique.
 
-3. `heroku config:set VAR_NAME='variable' --app app-name` - Adding any necessary enviroment variables will help with a number of things.
+3. `heroku config:set VAR_NAME='variable' --app app-name` - Adding any necessary environment variables will help with a number of things.
     - `AWS_ACCESS_KEY_ID` - Connect to AWS S3 Bucket (Static and Media files)
     - `AWS_SECRET_ACCESS_KEY` - Connect to AWS S3 Bucket (Static and Media files)
     - `DATABASE_URL` - Connects to database
@@ -357,7 +360,7 @@ Since I already have an account with Heroku I was able to do the majority of the
 
 5. `heroku git:remote -a app-name` - Links your Heroku app to Git repository
 
-6. `git push heroku main` - Pushes changes to both mainbranch and initates a build of your app
+6. `git push heroku main` - Pushes changes to both main branch and initiates a build of your app
 
 7. `heroku run python3 manage.py migrate --app app-name` - If necessary, at this stage you can run any database migrations
 

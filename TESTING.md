@@ -111,7 +111,7 @@
 |`Sort by...` dropdown functions as expected|✓|
 |`Sort by...` - Price (low to high) sorts products from lowest price to highest|✓|
 |`Sort by...` - Price (high to low) sorts products from highest price to lowest|✓|
-|`Sort by...` - Name (A-Z) sorts proructs in alphabetical order|✓|
+|`Sort by...` - Name (A-Z) sorts products in alphabetical order|✓|
 |`Sort by...` - Name (Z-A) sorts products in reverse alphabetical order|✓|
 |`Sort by...` - Category (A-Z) sorts product categories in alphabetical order|✓|
 |`Sort by...` - Category (Z-A) sorts product categories in reverse alphabetical order|✓|
@@ -151,7 +151,7 @@
 |FAQ Page Testing|Yes/No|
 |---|:---:|
 |Fonts have fully loaded|✓|
-|All accordian components work as expected|✓|
+|All accordion components work as expected|✓|
 |`Keep Shopping` button redirects user to products page|✓|
 
 |Shopping Bag Testing|Yes/No|
@@ -285,32 +285,32 @@
 3. I want to be able to delete products.
 
 #### Viewing and Navigating
-|User|I want to...|In order to...|Explaination|Image|
+|User|I want to...|In order to...|Explanation|Image|
 |---|---|---|---|---|
 |Shopper|View a list of products|Select products to purchase|Within the products page there is a list of all of the products available across the site|![All Products Page](assets/testing-img/all-products.png)|
 |Shopper|View specific categories of products|Quickly find products I'm interested in without having to search through all products|Within the nav bar there are category specific links to each category of product. This link directs the user to the category page|![Nav Bar - Desktop](assets/testing-img/nav-bar-desktop.png) ![Earrings Page](assets/testing-img/earrings-page.png)|
 |Shopper|View individual product details|Identify the price, description, product image, available sizes|When the user selects a product they are directed to the product detail page|![Product Detail Page](assets/testing-img/product-detail-page.png)|
-|Shopper|Easily view the total of the purchases at any time|Avoid spending too much|When the user adds a product to the bag a popup message is created to notify the user that they have successfully added the item to the cart. The toast diplays the bag contents and the price of the items within the bag. The shopping bag total within the nav bar is also updated to reflect the bag total, making it easy to keep track of the bag total across the whole site|![Toast - Success](assets/testing-img/success-toast.png) ![Nav Bar Bag Total](assets/testing-img/nav-bag.png)|
+|Shopper|Easily view the total of the purchases at any time|Avoid spending too much|When the user adds a product to the bag a popup message is created to notify the user that they have successfully added the item to the cart. The toast displays the bag contents and the price of the items within the bag. The shopping bag total within the nav bar is also updated to reflect the bag total, making it easy to keep track of the bag total across the whole site|![Toast - Success](assets/testing-img/success-toast.png) ![Nav Bar Bag Total](assets/testing-img/nav-bag.png)|
 
 #### Registration and User Accounts
-|User|I want to...|In order to...|Explaination|Image|
+|User|I want to...|In order to...|Explanation|Image|
 |---|---|---|---|---|
 |Site User|Easily register for an account|Have personal account and be able to view my profile|Users can register for an account on the register page|![Register Page](assets/testing-img/signup.png)|
 |Site User|Easily login or logout|Access my personal account information|User can log in and log out of their account through the nav bar|![Nav Bar - Logged In](assets/testing-img/nav-account-logged-in-admin.png) ![Nav Bar - Logged Out](assets/testing-img/nav-account-logged-out.png) ![Logout Page](assets/testing-img/signout.png)|
-|Site User|Easily recover my password in case I forget it|Recover access to my account|If the user has forgotten their password they can follow a link from the login page to the password reset page. Once they fill in the login form they will recieve an email with a link to reset their password|![Login Page](assets/testing-img/signin.png) ![Password Reset Page](assets/testing-img/password-reset.png) ![Password Reset Message](assets/testing-img/password-reset-message.png) ![Password Reset - Email](assets/testing-img/password-reset-email.png)|
+|Site User|Easily recover my password in case I forget it|Recover access to my account|If the user has forgotten their password they can follow a link from the login page to the password reset page. Once they fill in the login form they will receive an email with a link to reset their password|![Login Page](assets/testing-img/signin.png) ![Password Reset Page](assets/testing-img/password-reset.png) ![Password Reset Message](assets/testing-img/password-reset-message.png) ![Password Reset - Email](assets/testing-img/password-reset-email.png)|
 |Site User|Receive an email confirmation after registering|Verify that my account registration was successful|When user registers for an account an email is sent asking for them to confirm registration by following a link|![Register - Email](assets/testing-img/register-email.png)|
 |Site User|Have a personalised user profile|View personal order history and order confirmations, and save my payment information|Users have a personal profile page accessed through the nav bar account dropdown, This displays their default delivery information allowing them to save and update their information as well as showing any previous purchases|![Nav Bar - Logged In](assets/testing-img/nav-account-logged-in-admin.png) ![Profile Page](assets/testing-img/profile-page.png)|
 
 #### Sorting and Searching
-|User|I want to...|In order to...|Explaination|Image|
+|User|I want to...|In order to...|Explanation|Image|
 |---|---|---|---|---|
 |Shopper|Sort the list of available products|Easily identify the best rated, best prices and categorically sorted products|On the products page there is a `sort by` dropdown box that allows the user to sort the products by various criteria|![Sort - Products](assets/testing-img/product-sort.png)|
-|Shopper|Sort a specific category of product|Find the best-priced or best-rated products in a specific category, or sort the products in that category by name|Within each category page the same sorting dropdwn box is available for users to sort each individual category or product|![Sort - Rings](assets/testing-img/rings-sort.png)|
+|Shopper|Sort a specific category of product|Find the best-priced or best-rated products in a specific category, or sort the products in that category by name|Within each category page the same sorting dropdown box is available for users to sort each individual category or product|![Sort - Rings](assets/testing-img/rings-sort.png)|
 |Shopper|Search for a product by name or description|Find specific product I’d like to purchase|In the nav bar is a search bar that allows users to search for terms that appear within both the product title and the product descriptions|![Search Bar - Mobile](assets/testing-img/search-mobile.png) ![Search Bar - Desktop](assets/testing-img/nav-bar-desktop.png)|
 |Shopper|Easily see what I’ve searched for and the number of results|Quickly decide whether the product I want is available |After searching, providing the search is successful, below the page title and product count is the term used to search|![Search Success](assets/testing-img/search-success.png)|
 
 #### Purchasing and Checkout
-|User|I want to...|In order to...|Explaination|Image|
+|User|I want to...|In order to...|Explanation|Image|
 |---|---|---|---|---|
 |Shopper|Easily select the size and quantity of a product when purchasing it|Ensure I don't accidentally select the wrong product, quantity or size.|In the product details page, if the product has a size there is a dropdown option to select the size as well as a quantity selector|![Product Detail Page](assets/testing-img/product-options.png)|
 |Shopper|View items in my bag to be purchased|Identify the total cost of my purchases and all items I will receive|The shopping bag page allows the user to see the items within their bag. When an item is added to their bag a success popup message showing the contents of the bag|![Shopping Bag Page](assets/testing-img/shopping-bag.png) ![Toast Success](assets/testing-img/success-toast.png)|
@@ -321,7 +321,7 @@
 |Shopper|Receive an email confirmation after checkout|Keep the confirmation of what I have purchased for my records|Once the user has successfully completed their purchase, they will receive an confirmation email outlining their order details|![Order Confirmation Email](assets/testing-img/order-confirmation-email.png)|
 
 #### Admin and Management
-|User|I want to...|In order to...|Explaination|Image|
+|User|I want to...|In order to...|Explanation|Image|
 |---|---|---|---|---|
 |Store Owner|Add a product|Add new items to my store|Admin users are able to add products by selecting product management in the account dropdown within the nav bar|![Nav Bar - Logged In](assets/testing-img/nav-account-logged-in-admin.png) ![Add Product Page](assets/testing-img/add-product.png)|
 |Store Owner|Edit/update a product|Change product prices, descriptions, images and other product details|Admin users can edit products, they can do so by clicking the edit button beneath the products on the products page or within the description page. The edit product page is similar to the add product page however the input fields are already filled out with the product information|![Edit/Delete Options](assets/testing-img/edit-button.png) ![Product Details Page](assets/testing-img/product-detail-page.png) ![Edit Product Page](assets/testing-img/edit-product.png)|
@@ -478,7 +478,7 @@ I ran all of my python files through [Code Institute Python Linter](https://pep8
 - Bracelet category page not including products in the bracelet category
     - **Fix Attempt:** Checked spelling issues in URL link
         - **Outcome:** No issues with spelling, products still not appearing on the page. 
-    - **Fix Attempt:** Check to see if product was included in bracelets cateogory by including a category section in the product detail page
+    - **Fix Attempt:** Check to see if product was included in bracelets category by including a category section in the product detail page
         - **Outcome:** Products are save in the category but till aren't appearing on the category page.
     - **Fix Attempt:** Created a jinja templating link around the category section on product detail in order to generate a link to the bracelets page
         - **Outcome:** Products still not appearing on the page
