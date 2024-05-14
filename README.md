@@ -215,7 +215,6 @@ Within my python code I have also implemented a `get_object_or_404` function. In
 
 I also have a used toast feature that pops up in the top right hand corner that provides a feedback loop for any actions the user makes during their interaction with the site. These toasts cover everything from when a user has successfully added an item, it also notifies users of any errors that they may encounter.
 
-
 #### 2.2.3 Defensive Programming
 Throughout the site I have implemented defensive programming in order to keep it safe. Using Jinja templating to checking if the user is a superuser I am able to block access to admin related pages, I also used it in order to check if the user was in session, determining which account options are available. If the user is not logged in they have the option to 'register' or 'Login', if the user is logged in they can view their profile or sign out.
 

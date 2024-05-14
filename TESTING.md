@@ -15,6 +15,9 @@
 - [Known bugs and fixes](#known-bugs-and-fixes)
 
 ## Automated vs Manual Testing
+Throughout development and after deployment I used a combination of automated and manual testing. Both types of testing has their benefits and limitations so using them together allows for a better scope of testing. From manual testing by checking page by page to ensure that all features work as expected and they meet the user story requirements, to automated testing by running my code through validators and linters in order to check for errors. 
+
+Unfortunately due to time constraints and the vast scope of this product I was unable to implement advanced automated testing. In future iterations of this site I would write Django specific tests in order to ensure that I had not missed any bugs or issues.
 
 ## Manual Testing
 ### Responsivity Testing
