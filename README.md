@@ -213,9 +213,9 @@ In order to make an example purchase a specific card number is required:
 
 
 #### 2.2.3 Defensive Programming
-Jinja templating 
+Throughout the site I have implemented defensive programming in order to keep it safe. Using Jinja templating to checking if the user is a superuser I am able to block access to admin related pages, I also used it in order to check if the user was in session, determining which account options are available. If the user is not logged in they have the option to 'register' or 'Login', if the user is logged in they can view their profile or sign out.
 
-python decorators
+Within my Profile python code I have also used python auth decorators, specifically `login_required`. This means that users cannot access admin/user profiles unless they are logged in, it also stops users from accessing these pages by simply typing the url. If a user does not have the required permissions to access a page then an error toast will pop up notifying the user of the issue.
 
 
 #### 2.2.4 Future Goals
@@ -229,9 +229,8 @@ I opted to use a relational database as it allows for easier and more structured
 
 ![Database Schema](assets/readme-img/database-design.jpg)
 
-**Category**
-
-**Product**
+**Product & Categories**
+The category table in my database schema represents the the categories of products. When a product information is called the product category is represented by a foreign key, linking the two tables together. 
 
 **User Profile**
 
