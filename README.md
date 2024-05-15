@@ -377,6 +377,8 @@ I chose to connect my app to GitHub in order to manually deploy the app once I h
 * [Affinity](https://affinity.serif.com/en-gb/designer/) - Used to resize images.
 * [Astrid & Miyu](https://www.astridandmiyu.com/) - Used for images of jewellery
 * [Django](https://www.djangoproject.com/) - Used to create site
+* [ChatGPT 4](https://chat.openai.com/) - Used to find possible solutions to major issues in my code
+* [Code Institute](https://learn.codeinstitute.net/dashboard) - Used for source code and learning materials
 * [Code Institute DB Maker](https://dbs.ci-dbs.net/) - Used to create my database for deployment
 * [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - Used to check and fix python errors
 * [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) - Used to style site
@@ -390,3 +392,5 @@ I chose to connect my app to GitHub in order to manually deploy the app once I h
 * [Lucid Chart](https://www.lucidchart.com/) - Used to create visual database schema
 * [Markdown](https://www.markdownguide.org/) - Used to format README and TESTING
 * [Python](https://www.python.org/) - Used for coding functions and classes
+
+Special thanks to Agy Luczak for being a fantastic sounding board, to Ashley Oliver for providing me with encouragement and motivation every thursday and my partner Sami Tamminen-Jackson for being patient with me and buying me snacks when I needed an extra boost!
